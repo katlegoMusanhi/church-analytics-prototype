@@ -209,6 +209,39 @@ body{background:#f7f9f7;color:var(--ink)}
 @media(max-width:650px){.site-nav{height:68px}.hero{padding:65px 0 80px}.hero-grid{grid-template-columns:1fr;gap:45px}.hero-copy h1{font-size:clamp(47px,11vw,62px)}.hero-image-wrap{transform:none}.hero-image-wrap img{height:365px}.intro-inner{gap:10px 21px}.product-section{padding:75px 0 82px}.section-head h2{font-size:36px}.live-preview-toolbar{flex-direction:column;align-items:flex-start;gap:16px}.preview-tabs{width:100%;justify-content:space-between}.preview-tab{font-size:10px;padding:10px 8px}.live-product-frame{padding:5px}.live-browser-top{padding:0 10px}.live-browser-top span{font-size:7px;letter-spacing:.06em}.live-browser-top a{font-size:9px}.live-product-window iframe{height:605px}.insight-list{gap:13px}.insight-item{min-height:0;padding:27px 22px!important}.insight-item p{min-height:0}.insights-section{padding:74px 0}.people-section{padding:75px 0}.people-photo img{height:360px}.editorial-copy h2{font-size:36px}.end-cta{padding:76px 0}}
 @media(max-width:400px){.hero-copy h1{font-size:44px}.live-browser-top span{display:none}.preview-tab{font-size:9px}.live-product-window iframe{height:630px}}
 
+
+/* Original editorial expression informed by bold, friendly marketplace design. */
+:root{--ink:#12292c;--navy:#132d38;--navy2:#0d2630;--teal:#286e62;--muted:#587173;--cream:#f7faf6;--lime:#dff4a6}
+body{background:#fafcf9;color:var(--ink)}
+.site-header{background:#ffffffed;border-color:#e2e9e4}.site-nav{height:76px}
+.brand-symbol{background:#172f39}.brand-symbol svg{color:var(--lime)}.nav-links a{color:#2c4246}
+.nav-cta,.button-main{background:#102b31;border-radius:7px}
+.hero{padding:95px 0 107px;background:#dff4a6}.hero-grid{grid-template-columns:1.02fr .98fr;gap:60px}
+.hero-copy h1{color:#162d30;font-size:clamp(51px,5.5vw,79px);letter-spacing:-.075em;line-height:1.04;font-weight:800}
+.hero-copy h1 em{color:#286f62}.hero-copy .lead{color:#405d53;font-size:17px;line-height:1.75}
+.pill{color:#2b675a;font-size:11px;font-weight:800}.pill:before{background:#133f39}
+.button-secondary{background:#e9f8c5;border-color:#a2b991;color:#193b34}.button-secondary:hover{background:#f1ffd8}
+.hero-note{color:#527260}
+.hero-image-wrap{transform:rotate(-1.1deg);padding:0;border:9px solid #fff;box-shadow:14px 16px 0 #b5d28d,0 24px 52px #25423125;border-radius:6px}
+.hero-image-wrap::after{display:none}.hero-image-wrap img{height:445px;filter:saturate(.84)}
+.hero-image-wrap figcaption{background:white;padding:13px 12px 5px;color:#3c554d}
+.intro-ribbon{background:#132d38;border:0}.intro-inner{padding:23px 0;justify-content:space-between}
+.intro-inner span{font-size:12px;font-weight:800;color:#edf7ee}
+.quick-paths{padding:31px 0 16px;background:#fff}
+.quick-paths-inner{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.quick-path{position:relative;display:flex;flex-direction:column;gap:12px;background:#eef5ec;border:1px solid #e0e9e2;padding:23px 25px;min-height:149px;border-radius:10px;transition:transform .2s,background .2s}
+.quick-path:nth-child(2){background:#e5f3d1}.quick-path:nth-child(3){background:#ecf1f8}.quick-path:hover{background:#dff4a6;transform:translateY(-3px)}
+.quick-path-num{font:800 10px Manrope,Arial,sans-serif;letter-spacing:.08em;color:#4f7467}
+.quick-path strong{font:800 21px/1.18 Manrope,Arial,sans-serif;letter-spacing:-.055em;max-width:270px}
+.quick-path-arrow{position:absolute;bottom:19px;right:20px;font-size:18px;font-weight:800}
+.product-section{padding-top:94px;background:#fff}.section-head h2{font-weight:800;letter-spacing:-.07em;font-size:clamp(39px,4.1vw,58px)}
+.live-product-frame{padding:8px;border-color:#d3e0d4;box-shadow:0 15px 45px #213e351a}
+.insights-section{background:#f7faf5}.insight-item{box-shadow:none!important}.insight-item:first-child{background:#e4f5ce}.insight-item:nth-child(2){background:#e9f1f2}.insight-item:nth-child(3){background:#f4eee1}.insight-item h3{font-size:24px;font-weight:800}
+.process-section{background:#122e3b}.process-item::before{background:#dff4a6}
+.editorial-copy h2,.end-cta h2{font-weight:800;letter-spacing:-.07em}.end-cta{background:#dff4a6}.site-footer{background:#122e3b}
+@media(max-width:1050px){.hero-grid{gap:35px}.hero-copy h1{font-size:clamp(45px,5.5vw,66px)}.hero-image-wrap img{height:402px}.quick-path strong{font-size:18px}}
+@media(max-width:650px){.hero{padding:65px 0 77px}.hero-grid{grid-template-columns:1fr;gap:38px}.hero-copy h1{font-size:clamp(44px,11vw,62px)}.hero-copy .lead{font-size:15px}.hero-image-wrap{transform:none;box-shadow:8px 10px 0 #b5d28d}.hero-image-wrap img{height:335px}.quick-paths-inner{grid-template-columns:1fr;gap:10px}.quick-path{padding:18px 20px;min-height:94px}.quick-path strong{font-size:20px}.intro-inner span{font-size:10px}.section-head h2{font-size:37px}}
+
 </style>
 </head>
 <body>
@@ -230,22 +263,27 @@ body{background:#f7f9f7;color:var(--ink)}
 <section class="hero" id="top">
 <div class="wrap hero-grid">
 <div class="hero-copy reveal">
-<span class="pill">Church intelligence, made human</span>
-<h1>Know what happens <em>after the first hello.</em></h1>
-<p class="lead">Attendance matters. But belonging matters more. Connect outreach, first-time visits and ongoing engagement to see where your church is making a meaningful difference.</p>
-<div class="hero-actions"><a class="button-main" href="app.html#/dashboard">Explore the interactive demo <span aria-hidden="true">↗</span></a><a class="button-secondary" href="#platform">Discover the platform <span aria-hidden="true">↓</span></a></div>
-<div class="hero-note">Concept preview · No sign-up · Illustrative data only</div>
+<span class="pill">Church intelligence, with personality</span>
+<h1>More than a <em>headcount.</em> More human connection.</h1>
+<p class="lead">See who arrives, who returns and where outreach really connects. One simple home for your church’s attendance, outreach and follow-up insights.</p>
+<div class="hero-actions"><a class="button-main" href="app.html#/dashboard">See it in action <span aria-hidden="true">↗</span></a><a class="button-secondary" href="#platform">Take a look around <span aria-hidden="true">↓</span></a></div>
+<div class="hero-note">Built for independent churches · Fictional demo data</div>
 </div>
 <figure class="hero-image-wrap reveal">
 <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1300&q=84" alt="People talking together around a table in a welcoming, informal gathering" width="1300" height="1000" decoding="async" fetchpriority="high">
-<figcaption><span>People first. Clarity follows.</span><b>THE HEART OF THE WORK</b></figcaption>
+<figcaption><span>The best part of church? The people.</span><b>MADE FOR CONNECTION</b></figcaption>
 </figure>
 </div>
 </section>
-<div class="intro-ribbon"><div class="wrap intro-inner"><span>One connected picture</span><span>Thoughtful ministry decisions</span><span>Built for independent churches</span></div></div>
+<div class="intro-ribbon"><div class="wrap intro-inner"><span>Less spreadsheet archaeology.</span><span>More meaningful follow-up.</span><span>Better-informed outreach.</span></div></div>
+<section class="quick-paths" aria-label="Explore the platform"><div class="wrap quick-paths-inner">
+<a href="app.html#/attendance" class="quick-path"><span class="quick-path-num">01 / ATTENDANCE</span><strong>Who came back?</strong><span class="quick-path-arrow" aria-hidden="true">↗</span></a>
+<a href="app.html#/outreach" class="quick-path"><span class="quick-path-num">02 / OUTREACH</span><strong>What made a connection?</strong><span class="quick-path-arrow" aria-hidden="true">↗</span></a>
+<a href="app.html#/follow-ups" class="quick-path"><span class="quick-path-num">03 / FOLLOW-UP</span><strong>Who could use a hello?</strong><span class="quick-path-arrow" aria-hidden="true">↗</span></a>
+</div></section>
 <section class="section product-section" id="platform">
 <div class="wrap">
-<div class="section-head reveal"><div><span class="eyebrow">The product / 01</span><h2>An honest picture of growth.<br>And the people behind it.</h2></div><p>Not just a pretty dashboard. Explore the working product interface with sample data, real navigation and meaningful reports.</p></div>
+<div class="section-head reveal"><div><span class="eyebrow">The product / 01</span><h2>Less guesswork.<br>More of the full picture.</h2></div><p>Not just a pretty dashboard. Explore the working product interface with sample data, real navigation and meaningful reports.</p></div>
 <div class="live-preview-toolbar reveal" role="group" aria-label="Explore sample product pages"><div class="live-preview-heading"><span class="eyebrow">A glimpse inside the platform</span><strong>Try the actual demo</strong></div><div class="preview-tabs"><button type="button" class="preview-tab active" data-view="dashboard" aria-pressed="true">Overview</button><button type="button" class="preview-tab" data-view="outreach" aria-pressed="false">Outreach impact</button><button type="button" class="preview-tab" data-view="attendance" aria-pressed="false">Attendance</button></div></div>
 <div class="live-product-frame reveal"><div class="live-product-window"><div class="live-browser-top"><div class="windowdots" aria-hidden="true"><i></i><i></i><i></i></div><span>CHURCH GROWTH INTELLIGENCE / LIVE PRODUCT PREVIEW</span><a href="app.html#/dashboard" id="open-preview" aria-label="Open the selected demo page in full screen">Open full demo ↗</a></div><iframe id="product-iframe" title="Interactive Church Growth Intelligence application demo" loading="lazy" src="app.html#/dashboard"></iframe></div></div>
 <div class="preview-foot"><p>Explore the actual frontend with fictional records. Nothing you enter here is saved to a production database.</p><a class="text-link" href="app.html#/dashboard">Open the full interactive workspace&nbsp; ↗</a></div>
@@ -283,7 +321,7 @@ body{background:#f7f9f7;color:var(--ink)}
 </div>
 </div>
 </section>
-<section class="end-cta"><div class="wrap end-cta-inner"><div class="reveal"><span class="eyebrow">A better perspective starts here</span><h2>Understand the patterns.<br>Care for the people.</h2><p>See how thoughtful analytics can bring more clarity to outreach, attendance and the journeys that matter most.</p></div><a class="button-main" href="app.html#/dashboard">Explore the interactive demo <span aria-hidden="true">↗</span></a></div></section>
+<section class="end-cta"><div class="wrap end-cta-inner"><div class="reveal"><span class="eyebrow">A better perspective starts here</span><h2>People matter.<br>So does what you learn.</h2><p>See how thoughtful analytics can bring more clarity to outreach, attendance and the journeys that matter most.</p></div><a class="button-main" href="app.html#/dashboard">Explore the interactive demo <span aria-hidden="true">↗</span></a></div></section>
 </main>
 <footer class="site-footer"><div class="wrap"><div class="footer-top"><a class="brand" href="#top" aria-label="Return to top"><span class="brand-symbol" aria-hidden="true"><svg width="23" height="23" viewBox="0 0 24 24" fill="none"><path d="M3 7.5 10 15l11-11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 15 10 22l11-11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity=".5"/></svg></span><span class="brand-text"><span class="brand-main">church<i>growth</i></span><span class="brand-sub">INTELLIGENCE</span></span></a><div class="footer-links"><a href="#platform">Platform</a><a href="#insights">Insights</a><a href="#principles">Our approach</a><a href="app.html#/dashboard">Demo workspace</a></div></div><div class="footer-base"><p>© <span id="year">2026</span> Church Growth Intelligence · Product concept</p><p>All data on this site is fictional. Real tenant security, payments and production data handling are not yet implemented.</p></div></div></footer>
 <script>
