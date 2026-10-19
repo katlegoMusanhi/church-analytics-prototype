@@ -87,6 +87,87 @@
 @media(max-width:530px){.hero-photo{height:250px;border-radius:14px}.hero-photo figcaption{font-size:14px;bottom:13px;left:16px}.hero-v2 .hero-media .preview{width:92%;margin-top:-25px;margin-right:0}.hero-v2 .hero-media .preview-layout{min-height:0}.hero-v2 .hero-media .preview-content{padding:13px}.hero-photo-credit{text-align:left}.story-grid{grid-template-columns:1fr}.story-card{min-height:305px}.story-head h2{font-size:32px}.story-foot{flex-direction:column;align-items:flex-start;gap:8px}}
 @media(prefers-reduced-motion:reduce){.hero-photo img,.story-card img{transition:none}}
 
+
+/* Dedicated product showcase: photography and analytics no longer overlap. */
+.hero-v2 .hero-grid{align-items:center}
+.hero-photo{height:430px}
+.hero-v2 .hero-media{position:relative}
+.hero-photo-credit{margin-top:14px}
+.product-showcase{background:linear-gradient(180deg,#f5f8f6,#edf3ef);padding:98px 0 105px;overflow:hidden;border-bottom:1px solid #e1eae5}
+.showcase-head{display:flex;align-items:end;justify-content:space-between;gap:40px;margin:0 auto 38px;max-width:1050px}
+.showcase-copy h2{font:750 clamp(32px,3.6vw,50px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.052em;margin:14px 0 14px;color:var(--navy)}
+.showcase-copy h2 span{color:var(--teal)}
+.showcase-copy p{max-width:530px;font-size:15px;color:#62757a;margin:0}
+.showcase-head .btn{margin-bottom:9px;flex-shrink:0}
+.showcase-window{max-width:1050px;margin:0 auto;position:relative}
+.product-showcase .preview{width:100%;max-width:none;margin:0}
+.product-showcase .preview-frame{border:1px solid #d6e2df;border-radius:19px;box-shadow:0 28px 65px #14374426,0 7px 18px #14374410;padding:7px;background:#fff}
+.product-showcase .preview-top{padding:16px 23px}
+.product-showcase .preview-top small{font-size:10px}
+.product-showcase .preview-layout{grid-template-columns:190px minmax(0,1fr);min-height:430px;overflow:hidden;border-radius:0 0 11px 11px}
+.product-showcase .mini-side{background:#0c2838;color:#c4d4d8;padding:31px 19px;font-size:12px}
+.product-showcase .mini-brand{font-size:18px;color:white;margin-bottom:36px}
+.product-showcase .mini-link{padding:14px 11px;margin-bottom:8px;font-size:11px}
+.product-showcase .preview-content{padding:31px 40px 34px;background:#102b3d;color:white}
+.product-showcase .preview-h{margin-bottom:22px}
+.product-showcase .preview-h strong{font-size:24px;color:#fff}
+.product-showcase .preview-h small{font-size:11px;color:#c9d6d7}
+.product-showcase .mini-kpis{gap:14px}
+.product-showcase .mini-kpi{padding:20px;border-color:#ffffff24;background:#ffffff08;border-radius:10px}
+.product-showcase .mini-kpi small{font-size:11px;color:#c1d2d5;margin-bottom:11px}
+.product-showcase .mini-kpi strong{font-size:30px;color:#fff}
+.product-showcase .mini-kpi span{font-size:11px;color:#dfc48d}
+.product-showcase .mini-chart{border-color:#ffffff25;background:#ffffff06;padding:18px 22px 12px;margin-top:18px}
+.product-showcase .mini-chart-head{font-size:12px;color:#d0e0e1}
+.product-showcase .mini-chart .chart-trend{color:#dfc48d}
+.product-showcase .mini-chart svg{height:142px;margin-top:12px}
+.product-showcase .preview-badge{display:none}
+.showcase-foot{max-width:1050px;margin:22px auto 0;display:flex;justify-content:space-between;gap:18px;color:#70837e;font-size:11px}
+@media(max-width:990px){
+.hero-photo{height:370px}
+.showcase-head{align-items:start;gap:20px}
+.product-showcase .preview-layout{grid-template-columns:145px minmax(0,1fr)}
+.product-showcase .mini-side{padding:26px 13px}
+.product-showcase .preview-content{padding:28px 25px}
+.product-showcase .mini-kpi{padding:15px}
+}
+@media(max-width:750px){
+.hero-photo{height:325px}
+.product-showcase{padding:74px 0 76px}
+.showcase-head{display:block}
+.showcase-head .btn{margin-top:19px}
+.product-showcase .preview-layout{grid-template-columns:112px minmax(0,1fr);min-height:360px}
+.product-showcase .mini-side{padding:19px 8px;font-size:9px}
+.product-showcase .mini-brand{font-size:12px;margin-bottom:20px}
+.product-showcase .mini-link{font-size:9px;padding:10px 7px}
+.product-showcase .preview-content{padding:20px 16px}
+.product-showcase .preview-h strong{font-size:17px}
+.product-showcase .mini-kpis{gap:7px}
+.product-showcase .mini-kpi{padding:10px}
+.product-showcase .mini-kpi small{font-size:8px}
+.product-showcase .mini-kpi strong{font-size:19px}
+.product-showcase .mini-kpi span{font-size:8px}
+.product-showcase .mini-chart{padding:14px}
+.product-showcase .mini-chart svg{height:112px}
+}
+@media(max-width:530px){
+.hero-photo{height:250px}
+.showcase-head .btn{width:100%}
+.product-showcase .mini-side{display:none}
+.product-showcase .preview-layout{display:block;min-height:0}
+.product-showcase .preview-top{padding:10px}
+.product-showcase .preview-top small{font-size:7px}
+.product-showcase .preview-content{padding:16px 11px}
+.product-showcase .preview-h strong{font-size:16px}
+.product-showcase .preview-h small{font-size:8px}
+.product-showcase .mini-kpi{padding:9px 7px}
+.product-showcase .mini-kpi strong{font-size:18px}
+.product-showcase .mini-kpi span{display:block;margin-left:0}
+.product-showcase .mini-chart{padding:11px}
+.product-showcase .mini-chart svg{height:105px}
+.showcase-foot{flex-direction:column;gap:5px}
+}
+
 </style>
 </head>
 <body>
@@ -101,9 +182,29 @@
 <div class="hero-copy"><span class="eyebrow">Multi-church analytics · Concept prototype</span><h1>Understand your church. <em>Strengthen your impact.</em></h1><p>See how people arrive, return and connect — across services, outreach and follow-up — so leaders can care for people well and steward their efforts with clarity.</p><div class="hero-actions"><a class="btn btn-dark" href="app.html#/dashboard">Explore dashboard <span class="btn-arrow" aria-hidden="true">↗</span></a><a class="btn btn-outline" href="#services">See what it measures <span aria-hidden="true">↓</span></a></div><div class="micro"><b></b>Interactive prototype · No sign-up · All names and figures are fictional</div></div>
 <div class="hero-media">
 <figure class="hero-photo"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1350&q=82" alt="Friends sharing a relaxed moment together outdoors, representing the relationships behind church community" width="1350" height="900" fetchpriority="high" decoding="async"><figcaption><span>Every number has a person behind it.</span><small>Belonging comes first</small></figcaption></figure>
-<div class="preview" role="img" aria-label="Illustrative church attendance dashboard using fictional data"><div class="preview-frame nord-frame"><div class="preview-top"><div class="dots"><i></i><i></i><i></i></div><small>CHURCH INTELLIGENCE / SAMPLE WORKSPACE</small></div><div class="preview-layout"><aside class="mini-side"><div class="mini-brand">◇ &nbsp; Northgate</div><div class="mini-link active">▤ &nbsp; Overview</div><div class="mini-link">▥ &nbsp; Attendance</div><div class="mini-link">◇ &nbsp; Outreach</div><div class="mini-link">◎ &nbsp; Follow-ups</div></aside><div class="preview-content"><div class="preview-h"><strong>Growth overview</strong><small>Last 90 days · Demo</small></div><div class="mini-kpis"><div class="mini-kpi"><small>Avg. attendance</small><strong>412</strong><span>+4.2%</span></div><div class="mini-kpi"><small>First-time guests</small><strong>38</strong><span>+9</span></div><div class="mini-kpi"><small>30-day return</small><strong>46%</strong><span>+3 pts</span></div></div><div class="mini-chart"><div class="mini-chart-head"><span>Weekly attendance</span><span class="chart-trend">● &nbsp; trend</span></div><svg viewBox="0 0 420 125" fill="none" role="presentation" aria-hidden="true"><path d="M0 30 H420 M0 65 H420 M0 100 H420" stroke="#ffffff18"/><g fill="#438b84" opacity=".7"><rect class="bar-draw" style="--i:0" x="8" y="68" width="24" height="50" rx="3"/><rect class="bar-draw" style="--i:1" x="58" y="57" width="24" height="61" rx="3"/><rect class="bar-draw" style="--i:2" x="108" y="64" width="24" height="54" rx="3"/><rect class="bar-draw" style="--i:3" x="158" y="43" width="24" height="75" rx="3"/><rect class="bar-draw" style="--i:4" x="208" y="50" width="24" height="68" rx="3"/><rect class="bar-draw" style="--i:5" x="258" y="31" width="24" height="87" rx="3"/><rect class="bar-draw" style="--i:6" x="308" y="38" width="24" height="80" rx="3"/><rect class="bar-draw" style="--i:7" x="358" y="20" width="24" height="98" rx="3"/></g><path class="line-draw" d="M20 89 C52 80 71 87 110 77 S166 69 209 62 S278 49 311 44 S376 31 410 18" stroke="#dcc18b" stroke-width="3" stroke-linecap="round"/></svg></div></div></div></div><div class="preview-badge"><div class="small">Ministry intelligence</div><b>From first visit to connection <span aria-hidden="true">↗</span></b></div></div><span class="hero-photo-credit">Illustrative community photography · <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a></span>
+<span class="hero-photo-credit">Illustrative community photography · <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a></span>
 </div></div></section>
 <div class="trust"><div class="container trust-inner"><span>Built for meaningful ministry decisions</span><span class="trust-dot"></span><span>One connected picture of growth</span><span class="trust-dot"></span><span>Designed for multi-church teams</span></div></div>
+
+<section class="section product-showcase" id="product-preview" aria-labelledby="product-preview-title">
+  <div class="container">
+    <div class="showcase-head reveal">
+      <div class="showcase-copy">
+        <span class="eyebrow">A clearer picture of your ministry</span>
+        <h2 id="product-preview-title">Insight that's useful.<br><span>Care that's personal.</span></h2>
+        <p>Bring attendance, outreach and follow-up into one considered view, so the next step is easier to see.</p>
+      </div>
+      <a class="btn btn-dark" href="app.html#/dashboard">Explore the dashboard <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="showcase-window reveal">
+      <div class="preview" role="img" aria-label="Illustrative church attendance dashboard using fictional data"><div class="preview-frame nord-frame"><div class="preview-top"><div class="dots"><i></i><i></i><i></i></div><small>CHURCH INTELLIGENCE / SAMPLE WORKSPACE</small></div><div class="preview-layout"><aside class="mini-side"><div class="mini-brand">◇ &nbsp; Northgate</div><div class="mini-link active">▤ &nbsp; Overview</div><div class="mini-link">▥ &nbsp; Attendance</div><div class="mini-link">◇ &nbsp; Outreach</div><div class="mini-link">◎ &nbsp; Follow-ups</div></aside><div class="preview-content"><div class="preview-h"><strong>Growth overview</strong><small>Last 90 days · Demo</small></div><div class="mini-kpis"><div class="mini-kpi"><small>Avg. attendance</small><strong>412</strong><span>+4.2%</span></div><div class="mini-kpi"><small>First-time guests</small><strong>38</strong><span>+9</span></div><div class="mini-kpi"><small>30-day return</small><strong>46%</strong><span>+3 pts</span></div></div><div class="mini-chart"><div class="mini-chart-head"><span>Weekly attendance</span><span class="chart-trend">● &nbsp; trend</span></div><svg viewBox="0 0 420 125" fill="none" role="presentation" aria-hidden="true"><path d="M0 30 H420 M0 65 H420 M0 100 H420" stroke="#ffffff18"/><g fill="#438b84" opacity=".7"><rect class="bar-draw" style="--i:0" x="8" y="68" width="24" height="50" rx="3"/><rect class="bar-draw" style="--i:1" x="58" y="57" width="24" height="61" rx="3"/><rect class="bar-draw" style="--i:2" x="108" y="64" width="24" height="54" rx="3"/><rect class="bar-draw" style="--i:3" x="158" y="43" width="24" height="75" rx="3"/><rect class="bar-draw" style="--i:4" x="208" y="50" width="24" height="68" rx="3"/><rect class="bar-draw" style="--i:5" x="258" y="31" width="24" height="87" rx="3"/><rect class="bar-draw" style="--i:6" x="308" y="38" width="24" height="80" rx="3"/><rect class="bar-draw" style="--i:7" x="358" y="20" width="24" height="98" rx="3"/></g><path class="line-draw" d="M20 89 C52 80 71 87 110 77 S166 69 209 62 S278 49 311 44 S376 31 410 18" stroke="#dcc18b" stroke-width="3" stroke-linecap="round"/></svg></div></div></div></div><div class="preview-badge"><div class="small">Ministry intelligence</div><b>From first visit to connection <span aria-hidden="true">↗</span></b></div></div>
+    </div>
+    <div class="showcase-foot">
+      <span>Illustrative product preview · Fictional church and data</span>
+      <span>Attendance &nbsp;·&nbsp; Outreach &nbsp;·&nbsp; Follow-up</span>
+    </div>
+  </div>
+</section>
 <section class="section features services-v2" id="services"><div class="container"><div class="section-head centered reveal"><span class="eyebrow">Services · Six lenses</span><h2>A clearer view of your church, from every angle.</h2><p>Each module helps answer a question church leaders already ask — with information that is easy to interpret and act on.</p></div><div class="feature-grid">
 <article class="feature reveal" style="--delay:0ms"><div class="feature-number"><span>01 / INSIGHT</span><span class="feature-arrow" aria-hidden="true">↗</span></div><div class="feature-visual"><svg class="micro-svg" viewBox="0 0 230 65" aria-hidden="true"><path d="M0 16H230 M0 36H230 M0 55H230" stroke="#d5e7e2"/><path class="sparkline" d="M4 52 C30 50 42 31 60 35 S100 44 121 25 S160 28 181 15 S215 17 226 5" fill="none" stroke="#35877e" stroke-width="3" stroke-linecap="round"/><path class="sparkline sparkline-alt" d="M4 60 C43 56 68 52 92 50 S159 43 226 33" fill="none" stroke="#bfaa77" stroke-width="2"/></svg></div><h3>Attendance intelligence</h3><p>Understand weekly patterns, first visits and 30/90-day visitor return, not just headcounts.</p><a class="feature-link" href="app.html#/attendance">Explore attendance <span>→</span></a></article>
 <article class="feature reveal" style="--delay:85ms"><div class="feature-number"><span>02 / IMPACT</span><span class="feature-arrow" aria-hidden="true">↗</span></div><div class="feature-visual"><div class="chartbars" aria-hidden="true"><span class="vbar" style="--h:42%;--i:0"></span><span class="vbar" style="--h:66%;--i:1"></span><span class="vbar" style="--h:52%;--i:2"></span><span class="vbar" style="--h:83%;--i:3"></span><span class="vbar" style="--h:70%;--i:4"></span><span class="vbar" style="--h:92%;--i:5"></span></div></div><h3>Outreach impact</h3><p>Compare campaigns using first visits, subsequent engagement and thoughtfully defined observation windows.</p><a class="feature-link" href="app.html#/outreach">Explore outreach <span>→</span></a></article>
