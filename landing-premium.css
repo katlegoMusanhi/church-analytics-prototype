@@ -166,3 +166,102 @@ h1,h2,h3,h4{font-family:var(--font-display);letter-spacing:-.055em}
 @media(max-width:720px){.site-header{height:70px}.header-inner{gap:16px}.header-nav{display:none}.menu-toggle{display:flex;margin-left:auto}.header-cta{margin-left:auto}.mobile-menu{display:none;position:absolute;top:69px;left:0;right:0;background:#f9fbf8;border-bottom:1px solid #dce7df;padding:14px 27px 23px;box-shadow:0 16px 28px #17383b17}.mobile-menu.open{display:flex;flex-direction:column;align-items:stretch;gap:1px}.mobile-menu a{padding:11px 4px;font-weight:700;color:#365861}.mobile-menu a:last-child{margin-top:8px;padding:13px 15px;color:#fff;background:var(--ink-deep);border-radius:7px;text-align:center}.hero-grid{grid-template-columns:1fr;gap:35px}.hero{padding:69px 0 75px}.hero h1{font-size:clamp(47px,9.5vw,65px);margin:22px 0}.hero-lede{font-size:15px;max-width:600px}.hero-image-block{width:min(100%,580px);margin:0 auto}.hero-image-block .photo{height:405px}.signal-inner{gap:16px;grid-template-columns:1fr 1fr}.signal-inner span + span{padding-left:16px}.signal-inner span:last-child{display:none}.statement{padding:83px 0}.statement-inner{grid-template-columns:1fr;gap:22px}.statement h2{font-size:clamp(35px,6.7vw,53px)}.statement-copy{max-width:650px}.product{padding:78px 0}.product-head{flex-direction:column;align-items:start;gap:14px;margin-bottom:27px}.product-head .section-intro{max-width:630px}.workflow-head{grid-template-columns:1fr;gap:17px;margin-bottom:28px}.why-grid{grid-template-columns:1fr;gap:40px}.final-inner{flex-direction:column;align-items:start;gap:27px}.footer-top{flex-direction:column;gap:28px}}
 @media(max-width:540px){.container{width:calc(100% - 36px)}.brand-name{font-size:16px}.brand-mark{width:37px;height:37px}.brand-mark svg{width:22px;height:22px}.header-cta{display:none}.hero{padding:58px 0 64px}.hero h1{font-size:clamp(43px,11vw,58px);letter-spacing:-.075em}.hero-eyebrow{font-size:9px;letter-spacing:.09em}.hero-lede{font-size:14px}.hero-buttons{align-items:stretch}.hero-buttons .btn{min-height:48px;flex:1;padding:12px 15px;font-size:11px;gap:7px}.hero-image-block{padding:6px}.hero-image-block .photo{height:305px}.hero-image-block figcaption{font-size:9px}.hero-image-block figcaption b{font-size:8px}.signal-inner{grid-template-columns:1fr;gap:11px;padding:18px 0}.signal-inner span{font-size:11px}.signal-inner span + span{border:0;padding-left:0}.signal-inner span:last-child{display:flex}.section-title{font-size:clamp(32px,8vw,43px)}.statement h2{font-size:clamp(33px,8.2vw,44px)}.product-frame{padding:5px;border-radius:10px}.windowbar{height:35px;padding:0 10px}.windowbar-label{font-size:7px;letter-spacing:.05em}.windowbar-action{font-size:8px}.demo-preview{display:block;min-height:0}.preview-side{display:none}.preview-content{padding:18px 12px}.preview-content h3{font-size:21px}.preview-metrics{gap:5px}.preview-metric{padding:10px 7px}.preview-metric small{font-size:9px;min-height:39px}.preview-metric strong{font-size:22px}.preview-metric b{font-size:8px}.preview-lower{grid-template-columns:1fr;gap:8px}.preview-chart-card,.preview-tasks{padding:14px 12px}.preview-chart{height:105px;margin-top:10px}.preview-tasks ul{margin-top:8px}.preview-tasks li{padding:7px 0}.product-foot{align-items:start;flex-direction:column;gap:8px}.workflow{padding:75px 0}.workflow-steps{grid-template-columns:1fr;gap:10px}.workflow-step{min-height:0;padding:23px 23px 19px}.workflow-step h3{margin-top:25px}.workflow-step .step-link{padding-top:15px}.why{padding:75px 0}.principle{gap:11px;grid-template-columns:26px 1fr;padding:21px 0}.final{padding:74px 0}.final h2{font-size:clamp(38px,9vw,49px)}.footer-top{gap:25px}.footer-linkset{gap:13px 19px}.footer-bottom{flex-direction:column;gap:9px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.link-inline svg{transition:none}.btn:hover{transform:none}}
+
+/* Landbook-informed editorial refinement / 20 Oct 2026
+   Original execution: one focal hero, decisive CTA, product first, disciplined rhythm. */
+:root{--ink:#18343b;--ink-deep:#112b35;--teal:#246f65;--lime:#dff2b3;--canvas:#fafbf8;--line:#dfe8e2;--slate:#526d73}
+body{background:var(--canvas);font-size:16px}
+.container{width:min(1200px,calc(100% - 88px))}
+.site-header{height:78px;background:#fbfcfaed;border-bottom-color:#e1e9e3}
+.header-nav{gap:34px}
+.header-nav a{font-size:13px;color:#45636a}
+.brand-mark{border-radius:9px}
+.hero{background:#f2f6f0;padding:94px 0 108px}
+.hero:after{display:none}
+.hero-grid{grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);gap:clamp(40px,5.7vw,78px)}
+.hero-eyebrow{letter-spacing:.13em;font-size:11px}
+.hero h1{font-size:clamp(55px,5.3vw,78px);line-height:1.075;letter-spacing:-.078em;margin:25px 0 23px}
+.hero h1 span{color:#277b69}
+.hero-lede{max-width:520px;font-size:17px;line-height:1.75;color:#557277}
+.hero-buttons{margin-top:32px}
+.btn{border-radius:7px;min-height:51px}
+.hero-note{font-size:12px;color:#66817d}
+.hero-benefits{display:flex;align-items:center;flex-wrap:wrap;gap:12px 23px;margin-top:27px}
+.hero-benefits span{display:inline-flex;align-items:center;gap:7px;color:#365d59;font:750 11px var(--font-display)}
+.hero-benefits b{display:inline-flex;align-items:center;justify-content:center;color:#236a60;font-size:9px;border:1px solid #aacbc0;border-radius:5px;width:24px;height:24px}
+.hero-image-block{border-radius:10px;box-shadow:0 26px 60px #183e3b20}
+.hero-image-block .photo{height:505px;border-radius:5px}
+.hero-image-block img{filter:saturate(.91) contrast(1.02)}
+.hero-image-block:after{width:70px;height:70px}
+.hero-image-block figcaption{font-size:11px}
+.signal-bar{background:#e8f2e5}
+.signal-inner{padding:20px 0}
+.signal-inner span{font-size:12px;letter-spacing:0}
+.signal-inner b{border-radius:5px}
+.section-eyebrow{font-size:11px}
+.product{padding:104px 0 105px;background:#fff}
+.product-head{align-items:end;margin-bottom:37px}
+.product-head h2{font-size:clamp(40px,4.2vw,58px);line-height:1.12;letter-spacing:-.065em}
+.product-head .section-intro{max-width:350px;color:#58747a;font-size:15px;line-height:1.7}
+.product-frame{background:#f1f5f1;border-radius:13px;padding:10px;border-color:#d9e6dd;box-shadow:0 20px 54px #183e3b12}
+.product-window{box-shadow:0 4px 16px #183e3b0d}
+.product-foot{margin-top:19px}
+.statement{padding:91px 0 95px;background:#112d38}
+.statement-inner{grid-template-columns:1.2fr .63fr;gap:75px}
+.statement h2{font-size:clamp(40px,4.65vw,66px);line-height:1.105}
+.statement-copy{font-size:15px;line-height:1.78}
+.workflow{padding:104px 0 111px;background:#f7f9f6}
+.workflow-head{margin-bottom:35px}
+.workflow-steps{gap:13px}
+.workflow-step{border-radius:10px;border-color:#e0e8e1;background:#fff;transition:transform .2s,box-shadow .2s}
+.workflow-step:first-child{background:#e9f4de}
+.workflow-step:nth-child(3){background:#eef5f2}
+.workflow-step:hover{transform:translateY(-4px);box-shadow:0 16px 38px #1a454016}
+.workflow-step h3{font-size:24px;letter-spacing:-.06em}
+.workflow-step p{font-size:13px;line-height:1.72}
+.why{padding:109px 0}
+.why-grid{gap:clamp(50px,6.8vw,120px)}
+.why-copy>p{font-size:15px}
+.final{background:#e3f2bf;padding:95px 0}
+.final h2{font-size:clamp(41px,4.3vw,59px)}
+.footer{padding-top:44px}
+@media(max-width:1170px){
+.hero-grid{gap:33px}
+.hero h1{font-size:clamp(47px,5.4vw,65px)}
+.hero-image-block .photo{height:430px}
+.statement-inner{gap:38px}
+}
+@media(max-width:900px){
+.container{width:min(1200px,calc(100% - 54px))}
+.hero{padding:74px 0 84px}
+.hero h1{font-size:clamp(42px,5.6vw,55px)}
+.hero-lede{font-size:15px}
+.hero-image-block .photo{height:365px}
+.product{padding:82px 0}
+.statement{padding:77px 0}
+.workflow{padding:84px 0}
+}
+@media(max-width:720px){
+.hero-grid{grid-template-columns:1fr}
+.hero{padding:67px 0 76px}
+.hero h1{font-size:clamp(46px,9.5vw,64px);max-width:650px}
+.hero-lede{font-size:16px}
+.hero-image-block .photo{height:400px}
+.product-head{align-items:flex-start}
+.statement-inner{grid-template-columns:1fr;gap:19px}
+}
+@media(max-width:540px){
+.container{width:calc(100% - 36px)}
+.hero{padding:53px 0 64px}
+.hero h1{font-size:clamp(41px,10.7vw,54px)}
+.hero-lede{font-size:15px}
+.hero-benefits{gap:9px 12px;margin-top:20px}
+.hero-benefits span{font-size:10px}
+.hero-benefits b{width:22px;height:22px;font-size:8px}
+.hero-image-block .photo{height:290px}
+.product{padding:73px 0}
+.product-head h2{font-size:36px}
+.statement h2{font-size:clamp(35px,8.5vw,44px)}
+.workflow{padding:75px 0}
+.why{padding:73px 0}
+}
