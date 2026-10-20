@@ -205,3 +205,90 @@ tbody tr:hover{background:#fafdfa}
 .modal-actions .btn{width:100%}
 }
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* Unified Nord / premium editorial SaaS system, 20 October 2026 */
+:root{
+--ink:#18392f;--ink-2:#355447;--navy:#173e36;--navy-2:#102e27;
+--teal:#387e64;--lime:#e4f7aa;--canvas:#f7f8f3;--paper:#fff;
+--line:#dee8db;--muted:#657d70;--subtle:#eef3e8;
+--shadow:0 8px 28px rgba(18,57,43,.045)
+}
+body{background:var(--canvas);color:var(--ink);font-size:14px}
+.sidebar{background:#173e36;border-right:1px solid #1f5044}
+.brand-symbol{background:#2c5b47;color:var(--lime);border:1px solid #527963;border-radius:9px}
+.brand-name{color:#fff}.brand-name em{color:var(--lime)}
+.brand-sub{color:#b4cbbc}
+.workspace-label{color:#a1c3b0}
+.side-link{font-size:12px;color:#c7ddd1;border-radius:7px}
+.side-link svg{color:#a5c3ac}
+.side-link.active{background:var(--lime);color:#14372e;font-weight:800;box-shadow:none}
+.side-link.active svg{color:#14372e}
+.side-footer{border-color:#ffffff24}.side-footer a,.side-footer button{color:#e1f2c5}
+.topbar{background:#fcfdfb;border-bottom-color:#e3e9de}
+.breadcrumb b{color:#193c30}
+.select,.input,.field-input{border-color:#d5e2d6;border-radius:7px}
+.demo-label{background:#ebf4e1;border-color:#d5e7c4;color:#3f7550}
+.demo-dot{background:#4c8c5a}
+.avatar{background:#e5efdf;border-color:#d9e9d5;color:#306649}
+.page{max-width:1480px;padding-top:42px}
+.page-head{margin-bottom:29px}
+.kicker{color:#427b60;font-size:10px}
+.page-head h1{font-size:clamp(30px,2.55vw,40px);letter-spacing:-.075em}
+.page-head p{font-size:14px;color:#6a8075}
+.btn{border-color:#d1dfd2;color:#284d3b;border-radius:7px}
+.btn.primary{background:#173e36;color:#fff;border-color:#173e36}
+.btn.primary:hover{background:#2b5747}
+.btn.lime{background:var(--lime);border-color:var(--lime)}
+.btn:hover{background:#e9f3e1}
+.focus-banner{background:#173e36;border-radius:12px;padding:36px 38px}
+.focus-banner:before{border-color:#ffffff20}.focus-banner:after{border-color:#ffffff12}
+.focus-banner .kicker{color:var(--lime)}
+.focus-banner h2{font-size:clamp(22px,2.4vw,33px);letter-spacing:-.065em}
+.focus-banner p{font-size:13px;color:#c3dccc}
+.focus-banner .btn{background:var(--lime);color:#153a30}
+.focus-banner .btn:hover{background:#f0ffcc}
+.metrics{gap:15px;margin-bottom:23px}
+.metric{border-radius:10px;border-color:#e2e9e0;padding:25px 23px;box-shadow:none}
+.metric-label{color:#6d8577}
+.metric-value{font-size:clamp(28px,3vw,42px);letter-spacing:-.075em;color:#1d4737}
+.metric-note.good{color:#367d54}
+.panel{border-color:#e0e8df;border-radius:10px;box-shadow:none;padding:28px}
+.panel-title h2{font-size:17px;color:#25483a}
+.panel-title p{color:#728677}
+.funnel-stage{border-color:#dfeadf;background:#f5f8f1}
+.funnel-stage:first-child{background:#e7f5d3}
+.funnel-stage .number{color:#275d43}
+.funnel-stage .label{color:#47745f}
+.chart-line{stroke:#3b956b}
+.chart-area{fill:#b4dfc0}
+.plot-dot{fill:#2e9066}
+.chart-grid{stroke:#e8eee7}
+.chart-caption{color:#6f8176}
+.legend-dot{background:#3b956b}
+.mini-bars .bar-fill,.bar-fill{background:linear-gradient(90deg,#71af86,#3b8e67)}
+.bar-track{background:#edf4e9}
+.campaign-detail{background:#f5f9f1;border-color:#e0ebdc}
+.campaign-detail .detail-stat{border-color:#dfebdd}
+.tag{background:#ecf6e9;color:#287449}
+.tag.warn{background:#fdf4e8;color:#966d36}
+.table-wrap{border-radius:8px}
+thead th{color:#75897b;background:#fafcf9}
+tbody tr:hover{background:#f7faf2}
+tbody td{color:#36594a}
+.cell-name{color:#244a38}
+.action-link,.panel-title a,.panel-title button{color:#2f8055}
+.task-check{border-color:#d5e6d7;color:#297348}
+.task-check.done{background:#e3f2d4;border-color:#c7dfb9}
+.notice{background:#edf4e8;border-color:#dfe9da;color:#49715b}
+.notice strong{color:#24563e}
+.stage-filter .filter-pill.active{background:#173e36;border-color:#173e36}
+.privacy{color:#788c7c}
+.modal{border-radius:12px}
+.toast{background:#173e36}
+@media(max-width:740px){
+.page{padding-top:28px}
+.focus-banner{padding:25px 22px}
+.focus-banner .btn:hover{background:#f0ffcc}
+.metric{padding:19px 15px}
+.panel{padding:22px 17px}
+}
