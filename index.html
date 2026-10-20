@@ -1,353 +1,108 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#102b3b">
-<meta name="description" content="Understand attendance trends, outreach impact and visitor follow-up in one thoughtful church intelligence workspace. Church Growth Intelligence is a multi-church SaaS concept.">
-<title>Church Growth Intelligence — Understand your church. Strengthen your impact.</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{--ink:#102e3b;--navy:#102b3b;--navy2:#0a2331;--teal:#347e78;--text:#304b55;--muted:#647982;--line:#dfe6e4;--paper:#fff;--cream:#f6f7f4;--sage:#e8f1ed;--sand:#ebe8df;--gold:#bda678}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:90px}
-body{margin:0;background:var(--cream);color:var(--ink);font:400 15px/1.65 'DM Sans',Arial,sans-serif;-webkit-font-smoothing:antialiased}
-button,a{font:inherit}a{color:inherit;text-decoration:none}button{cursor:pointer}
-h1,h2,h3,h4,p{margin-top:0}h1,h2,h3{font-family:'Manrope',Arial,sans-serif;letter-spacing:-.052em}img{display:block;max-width:100%}
-::selection{color:#102b3b;background:#c8e7de}.wrap{width:min(1180px,calc(100% - 72px));margin:auto}
-.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-.skip{position:absolute;top:-100px;left:12px;z-index:99;background:#fff;padding:10px 14px}.skip:focus{top:12px}
-:focus-visible{outline:3px solid #63a59d;outline-offset:4px}
-.site-header{position:sticky;top:0;z-index:20;background:#f9faf8ec;border-bottom:1px solid #102b3b12;backdrop-filter:blur(17px)}
-.site-nav{height:78px;display:flex;justify-content:space-between;align-items:center;gap:40px}
-.brand{display:flex;align-items:center;gap:11px;white-space:nowrap}
-.brand-symbol{width:38px;height:38px;display:grid;place-items:center;background:var(--navy);border-radius:9px;color:#c3e5da}
-.brand-text{display:flex;flex-direction:column;line-height:1}
-.brand-main{font:800 17px/1.15 Manrope,Arial,sans-serif;letter-spacing:-.06em;color:var(--navy)}
-.brand-main i{color:var(--teal);font-style:normal}
-.brand-sub{font:800 8px/1.8 Manrope,Arial,sans-serif;letter-spacing:.28em;color:#6e817f}
-.nav-links{display:flex;align-items:center;gap:34px;margin-left:auto}
-.nav-links a{font-size:12px;font-weight:700;color:#526a72;transition:color .2s}
-.nav-links a:hover{color:#116c65}
-.nav-cta{display:inline-flex;align-items:center;justify-content:center;gap:15px;background:var(--navy);color:#fff;border-radius:7px;padding:12px 18px;font:700 12px Manrope,sans-serif;white-space:nowrap;transition:background .2s,transform .2s}
-.nav-cta:hover,.button-main:hover{background:#205064;transform:translateY(-1px)}
-.nav-cta span{font-size:17px;line-height:1}.menu-button{display:none;border:0;background:transparent;color:var(--navy);font-size:25px;padding:8px}
-.pill{display:inline-flex;align-items:center;gap:8px;font:700 10px Manrope,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#38746d}
-.pill::before{content:"";width:7px;height:7px;background:#64a597;border-radius:50%}
-.hero{padding:84px 0 103px;background:#f6f8f5}
-.hero-grid{display:grid;grid-template-columns:1fr .98fr;align-items:center;gap:72px}
-.hero-copy h1{font-size:clamp(46px,4.55vw,69px);line-height:1.105;font-weight:800;max-width:630px;margin:21px 0 24px}
-.hero-copy h1 em{font-style:normal;color:var(--teal)}
-.hero-copy .lead{font-size:16px;line-height:1.85;color:#617680;max-width:510px;margin:0 0 31px}
-.hero-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-.button-main,.button-secondary{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:47px;padding:12px 21px;border:1px solid transparent;border-radius:7px;font:750 12px Manrope,sans-serif;transition:background .2s,transform .2s,color .2s}
-.button-main{color:#fff;background:var(--navy)}
-.button-secondary{color:var(--navy);background:transparent;border-color:#cbd8d4}
-.button-secondary:hover{background:#e4eeea}
-.button-main span,.button-secondary span{font-size:17px}
-.hero-note{margin-top:25px;display:flex;align-items:center;gap:10px;color:#7c8b88;font-size:11px}
-.hero-note::before{content:"";width:6px;height:6px;border-radius:50%;background:#79aa9d;flex:none}
-.hero-image-wrap{margin:0;position:relative;padding:11px;background:#fff;border:1px solid #e1e9e4;box-shadow:0 30px 65px #17384514}
-.hero-image-wrap img{width:100%;height:465px;object-fit:cover;object-position:center 42%;filter:saturate(.83) contrast(1.03)}
-.hero-image-wrap figcaption{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 6px 0;font:600 10px Manrope,sans-serif;letter-spacing:.02em;color:#768783}
-.hero-image-wrap figcaption b{color:#335d5e;font-weight:800}
-.hero-image-wrap::after{content:"";width:91px;height:91px;border:1px solid #b5d4c9;position:absolute;right:-19px;top:-19px;z-index:-1}
-.intro-ribbon{background:#e7eeea;border-block:1px solid #dae5df}
-.intro-inner{display:flex;justify-content:center;align-items:center;gap:55px;padding:19px 0}
-.intro-inner span{font:700 11px Manrope,sans-serif;color:#36565e;letter-spacing:.015em;white-space:nowrap}
-.intro-inner span+span{position:relative}
-.intro-inner span+span::before{content:"";position:absolute;left:-29px;top:50%;width:3px;height:3px;border-radius:50%;background:#84ada3}
-.section{padding:108px 0}
-.eyebrow{display:inline-block;font:800 10px Manrope,sans-serif;letter-spacing:.17em;text-transform:uppercase;color:var(--teal)}
-.section-head{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:42px}
-.section-head h2,.editorial-copy h2,.process-head h2,.end-cta h2{font-size:clamp(34px,3.55vw,48px);line-height:1.19;font-weight:750;margin:14px 0 0;max-width:675px}
-.section-head p{max-width:365px;color:var(--muted);font-size:14px;line-height:1.8;margin:0}
-.product-section{background:#fff}
-.product-frame{border:1px solid #d7e1df;border-radius:14px;background:#fff;box-shadow:0 25px 60px #11344314;overflow:hidden}
-.windowbar{height:43px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;border-bottom:1px solid #e8eeeb;background:#fdfefe;color:#7e9292;font-size:10px;letter-spacing:.11em;font-weight:800}
-.windowdots{display:flex;gap:6px}
-.windowdots i{display:block;width:7px;height:7px;background:#ccd9d6;border-radius:50%}
-.product-app{display:grid;grid-template-columns:188px minmax(0,1fr);min-height:530px}
-.app-side{background:#102c3c;padding:26px 15px;color:#b9cbd2}
-.app-tenant{display:flex;align-items:center;gap:9px;font:800 12px Manrope,sans-serif;color:#fff;padding:0 8px 25px;margin-bottom:14px;border-bottom:1px solid #ffffff20}
-.app-tenant b{width:23px;height:23px;background:#2b595c;border-radius:5px;display:grid;place-items:center;color:#a5e0cc;font-size:16px}
-.side-link{display:block;border-radius:5px;color:#b3c6cd;font:600 11px Manrope,sans-serif;padding:12px 13px;margin-bottom:5px}
-.side-link.active{background:#ffffff16;color:#fff}
-.side-link span{display:inline-block;width:20px;color:#8ec8b9}
-.side-label{font:800 8px Manrope,sans-serif;letter-spacing:.15em;color:#83a5ae;padding:25px 13px 10px}
-.app-content{padding:34px 38px 35px;background:#f9fbf9}
-.app-overline{display:flex;justify-content:space-between;align-items:center;color:#79908e;font-size:10px;font-weight:700;gap:10px}
-.app-overline em{font-style:normal;display:inline-flex;gap:6px;align-items:center}
-.app-overline em::before{content:"";height:6px;width:6px;border-radius:50%;background:#57a391}
-.app-content h3{font:800 25px Manrope,sans-serif;letter-spacing:-.045em;margin:8px 0 24px}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.stat{background:#fff;border:1px solid #e3ebe7;padding:17px;border-radius:8px}
-.stat-label{display:block;font:600 10px Manrope,sans-serif;color:#81918c;line-height:1.4;min-height:27px}
-.stat strong{display:block;font:800 27px Manrope,sans-serif;letter-spacing:-.06em;color:#143546;margin:11px 0 4px}
-.stat small{display:block;color:#2c8b78;font-size:9px;font-weight:700}
-.app-charts{display:grid;grid-template-columns:1.25fr .75fr;gap:12px;margin-top:14px}
-.app-panel{border:1px solid #e3ebe7;border-radius:8px;background:#fff;padding:20px 20px 12px;min-width:0}
-.panel-title{display:flex;justify-content:space-between;align-items:center;gap:9px;font:800 11px Manrope,sans-serif;color:#294956;margin-bottom:14px}
-.panel-title small{font-size:9px;color:#91a09b}
-.panel-svg{height:150px;width:100%;overflow:visible}
-.campaign-row{padding:10px 0;border-bottom:1px solid #ecf1ef;display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:10px;color:#526a72}
-.campaign-row:last-child{border-bottom:0}
-.campaign-row b{font-weight:800;color:#244652}
-.campaign-row strong{font:800 13px Manrope,sans-serif;color:#328475}
-.campaign-row small{display:block;font-size:9px;color:#94a09e;margin-top:3px}
-.preview-foot{display:flex;align-items:center;justify-content:space-between;gap:22px;margin-top:20px}
-.preview-foot p{font-size:11px;color:#8a9994;margin:0}
-.text-link{font:800 12px Manrope,sans-serif;color:#24766f;white-space:nowrap}
-.text-link:hover{text-decoration:underline;text-underline-offset:4px}
-.insights-section{background:#f5f7f4}
-.insight-list{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #cedcd7;border-bottom:1px solid #cedcd7}
-.insight-item{padding:30px 31px 17px;border-right:1px solid #cedcd7;min-width:0}
-.insight-item:first-child{padding-left:0}.insight-item:last-child{border-right:0;padding-right:0}
-.insight-number{font:700 11px Manrope,sans-serif;color:#4f9085}
-.insight-item h3{font-size:21px;line-height:1.25;letter-spacing:-.045em;margin:26px 0 13px;font-weight:750}
-.insight-item p{font-size:13px;color:#697f82;line-height:1.85;max-width:315px}
-.insight-item .text-link{display:inline-block;margin-top:7px}
-.process-section{background:var(--navy2);color:#fff;padding:100px 0 108px}
-.process-head{display:flex;justify-content:space-between;align-items:end;gap:45px;margin-bottom:46px}
-.process-head .eyebrow{color:#b8d9ca}
-.process-head h2{max-width:610px}
-.process-head p{font-size:14px;color:#a5bcc4;max-width:320px;margin:0;line-height:1.9}
-.process-track{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #52717b;padding-top:29px;gap:25px}
-.process-item{position:relative;padding-right:12px}
-.process-item::before{content:"";width:9px;height:9px;border-radius:50%;background:#a0d7c4;border:3px solid var(--navy2);outline:1px solid #8bbfaf;position:absolute;top:-34px;left:1px}
-.process-number{color:#7baaa4;font:800 12px Manrope,sans-serif}
-.process-item h3{font:750 17px Manrope,sans-serif;letter-spacing:-.035em;margin:23px 0 8px}
-.process-item p{font-size:12px;color:#a1b5ba;line-height:1.85}
-.process-end{margin-top:39px;color:#b6c7ca;font-size:11px}
-.people-section{background:#fff}
-.people-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:90px;align-items:center}
-.people-photo{margin:0;background:#e1e9e3;border:10px solid #f7f9f7}
-.people-photo img{width:100%;height:455px;object-fit:cover;object-position:50% 45%;filter:saturate(.82)}
-.people-photo figcaption{padding:9px 0 3px;font-size:10px;color:#82928e}
-.editorial-copy h2{margin:17px 0 19px}
-.editorial-copy>p{font-size:15px;color:#667981;max-width:525px;line-height:1.9;margin-bottom:32px}
-.principle{display:grid;grid-template-columns:30px 1fr;gap:17px;border-top:1px solid #e1e9e6;padding:19px 0}
-.principle .number{font:800 10px Manrope,sans-serif;color:var(--teal);padding-top:4px}
-.principle b{display:block;font:800 13px Manrope,sans-serif;color:#214551;margin-bottom:5px}
-.principle span:last-child{font-size:12px;color:#6b7e80;line-height:1.7}
-.end-cta{padding:88px 0 90px;background:#dfece6}
-.end-cta-inner{display:flex;align-items:center;justify-content:space-between;gap:55px}
-.end-cta h2{max-width:700px;margin:14px 0 14px}
-.end-cta p{color:#647a7c;max-width:620px;font-size:14px;margin:0}
-.end-cta .button-main{flex:none}
-.site-footer{background:#102b3b;color:#b6c8cd;padding:40px 0 24px}
-.footer-top{display:flex;justify-content:space-between;align-items:center;gap:35px;padding-bottom:34px;border-bottom:1px solid #ffffff24}
-.site-footer .brand-main{color:#fff}.site-footer .brand-sub{color:#9cb6b9}
-.footer-links{display:flex;gap:27px;font-size:12px}
-.footer-links a:hover{color:#fff}
-.footer-base{padding-top:21px;display:flex;justify-content:space-between;gap:30px;font-size:10px;color:#93aab1}
-.footer-base p{margin:0}
-.reveal{opacity:0;transform:translateY(15px);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.8,.2,1)}
-.reveal.visible{opacity:1;transform:none}
-@media(max-width:1100px){.hero-grid{gap:35px}.hero-copy h1{font-size:clamp(42px,5vw,60px)}.hero-image-wrap img{height:410px}.people-grid{gap:50px}.app-content{padding:25px}.stats{gap:8px}.stat{padding:12px}}
-@media(max-width:850px){.nav-links{gap:17px}.nav-links a{font-size:11px}.hero-grid{grid-template-columns:1fr 1fr}.hero-copy h1{font-size:43px}.hero-image-wrap img{height:380px}.intro-inner{gap:24px}.intro-inner span+span::before{left:-14px}.section{padding:80px 0}.section-head{align-items:start;flex-direction:column;gap:14px}.section-head p{max-width:650px}.app-side{padding:18px 8px}.product-app{grid-template-columns:135px minmax(0,1fr)}.app-tenant{font-size:9px}.side-link{font-size:9px}.app-charts{grid-template-columns:1fr}.panel-svg{height:130px}.people-grid{gap:30px}.people-photo img{height:400px}.end-cta-inner{align-items:start;flex-direction:column;gap:24px}}
-@media(max-width:650px){.wrap{width:min(100% - 38px,520px)}.site-nav{height:68px;gap:14px}.brand-main{font-size:16px}.brand-symbol{width:34px;height:34px}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:#fbfcfa;padding:22px 24px 25px;box-shadow:0 12px 28px #102b3b1b;border-bottom:1px solid #dce7e0;flex-direction:column;align-items:flex-start;gap:17px}.nav-links.open{display:flex}.nav-links a{font-size:14px}.site-nav>.nav-cta{margin-left:auto;font-size:10px;padding:11px 12px;gap:5px}.menu-button{display:block}.hero{padding:58px 0 66px}.hero-grid{grid-template-columns:1fr;gap:39px}.hero-copy h1{font-size:clamp(43px,10vw,59px);max-width:520px}.hero-copy .lead{font-size:15px}.hero-image-wrap img{height:370px}.intro-inner{flex-wrap:wrap;justify-content:start;gap:11px 28px}.intro-inner span{font-size:10px}.intro-inner span+span::before{display:none}.section{padding:70px 0}.section-head h2,.editorial-copy h2,.process-head h2,.end-cta h2{font-size:clamp(31px,8.5vw,41px)}.product-app{grid-template-columns:1fr}.app-side{display:none}.app-content{padding:21px 14px}.app-content h3{font-size:21px}.stats{grid-template-columns:repeat(2,1fr);gap:8px}.stat strong{font-size:23px}.app-charts{grid-template-columns:1fr}.panel-svg{height:125px}.insight-list{grid-template-columns:1fr}.insight-item{padding:26px 0;border-right:0;border-bottom:1px solid #d2dfd8}.insight-item:last-child{border-bottom:0}.insight-item h3{margin:14px 0 9px}.process-section{padding:70px 0}.process-head{display:block;margin-bottom:32px}.process-head p{margin-top:17px}.process-track{grid-template-columns:1fr 1fr;gap:25px 20px}.people-grid{grid-template-columns:1fr;gap:29px}.people-photo img{height:350px}.end-cta{padding:67px 0}.end-cta .button-main{width:100%}.footer-top{align-items:start;flex-direction:column}.footer-links{flex-wrap:wrap;gap:15px 22px}.footer-base{flex-direction:column;gap:7px}}
-@media(max-width:400px){.site-nav>.nav-cta{font-size:0;padding:10px 12px}.site-nav>.nav-cta span{font-size:18px}.hero-copy h1{font-size:42px}.hero-image-wrap img{height:275px}.button-main,.button-secondary{padding:12px 15px;gap:8px}.process-track{grid-template-columns:1fr}.process-item{padding-bottom:9px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.hero-image-wrap img{transition:none}}
-
-/* Nord 2.0 — cohesive editorial landing + actual app preview */
-:root{--ink:#122f3d;--navy:#102b3d;--navy2:#0a2332;--teal:#28796f;--muted:#627983;--cream:#f5f8f5}
-body{background:#f7f9f7;color:var(--ink)}
-.hero{background:radial-gradient(ellipse at 15% 25%,#ecf4ef 0,transparent 50%),linear-gradient(115deg,#fbfcfa,#eff4ef);padding:106px 0 113px}
-.hero-grid{grid-template-columns:1.06fr .94fr;gap:88px}
-.hero-copy h1{font-size:clamp(50px,5vw,78px);line-height:1.07;letter-spacing:-.069em;max-width:690px;margin-top:24px}
-.hero-copy h1 em{color:#2d8376}
-.hero-copy .lead{font-size:16px;max-width:490px;line-height:1.85}
-.hero-image-wrap{border-radius:5px;padding:10px;box-shadow:0 23px 60px #102b3d1b;transform:rotate(1deg)}
-.hero-image-wrap img{height:480px;filter:saturate(.87) contrast(1.01)}
-.hero-image-wrap figcaption{letter-spacing:0}
-.site-nav{height:82px}.brand-main{font-size:17px}.nav-links a{font-size:12px}.nav-cta{font-size:12px}
-.intro-ribbon{background:#12374a;border-color:#12374a}
-.intro-inner{padding:18px 0}
-.intro-inner span{color:#dcece5;font-size:11px}
-.intro-inner span+span::before{background:#8eb8af}
-.product-section{padding-top:112px;padding-bottom:120px}
-.section-head{margin-bottom:36px}
-.section-head h2{font-size:clamp(38px,3.8vw,54px);letter-spacing:-.06em}
-.live-preview-toolbar{display:flex;align-items:end;justify-content:space-between;gap:20px;max-width:1180px;margin:0 auto 15px}
-.live-preview-heading{display:flex;flex-direction:column;gap:2px}
-.live-preview-heading strong{font:800 18px Manrope,Arial,sans-serif;letter-spacing:-.04em}
-.preview-tabs{display:inline-flex;align-items:center;gap:5px;padding:5px;background:#eef3ef;border:1px solid #dce8e0;border-radius:9px}
-.preview-tab{appearance:none;border:0;background:transparent;border-radius:6px;padding:10px 14px;font:750 11px Manrope,Arial,sans-serif;color:#687e7d;transition:background .2s,color .2s;cursor:pointer}
-.preview-tab:hover{color:#164755;background:#e3ece7}
-.preview-tab.active{background:#fff;box-shadow:0 2px 7px #15363f13;color:#113f4e}
-.live-product-frame{padding:11px;background:#e8efea;border:1px solid #d9e4df;border-radius:13px;box-shadow:0 24px 70px #0e334017}
-.live-product-window{background:#fff;border:1px solid #d4e0db;border-radius:9px;overflow:hidden}
-.live-browser-top{height:44px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:15px;border-bottom:1px solid #e2eae7;background:#fafcfb}
-.live-browser-top span{font:800 9px Manrope,Arial,sans-serif;letter-spacing:.13em;color:#8a9a97}
-.live-browser-top a{font:800 10px Manrope,Arial,sans-serif;color:#2f8375;white-space:nowrap}
-.live-browser-top a:hover{text-decoration:underline;text-underline-offset:3px}
-.live-product-window iframe{width:100%;height:685px;border:0;background:#f6f8f7;display:block}
-.preview-foot{margin-top:18px}
-.insights-section{padding-block:112px}
-.insight-list{gap:19px;border:0}
-.insight-item{background:#fff;padding:36px 30px 29px!important;border:1px solid #dfe9e5!important;border-radius:10px;min-height:305px;transition:transform .25s,box-shadow .25s}
-.insight-item:hover{transform:translateY(-4px);box-shadow:0 17px 30px #123d4220}
-.insight-item h3{font-size:24px;margin:29px 0 16px;line-height:1.21}
-.insight-item p{min-height:83px}
-.insight-item .text-link{margin-top:8px}
-.process-section{background:#0d2d3d;padding-block:113px}
-.process-head h2{font-size:clamp(39px,3.7vw,52px);max-width:690px}
-.people-section{padding-block:120px}
-.people-grid{gap:100px}
-.people-photo{border:0;position:relative}
-.people-photo img{height:500px}
-.people-photo figcaption{padding:13px 0}
-.editorial-copy h2{font-size:clamp(39px,3.75vw,53px);line-height:1.17}
-.end-cta{background:#e2f0e8;padding:100px 0}
-.end-cta h2{font-size:clamp(39px,3.8vw,52px)}
-.site-footer{background:#0e2d3e}
-@media(max-width:1050px){.hero-grid{gap:45px}.hero-copy h1{font-size:clamp(46px,5.3vw,65px)}.hero-image-wrap img{height:440px}.people-grid{gap:45px}.live-product-window iframe{height:615px}}
-@media(max-width:850px){.hero-grid{gap:35px}.hero-copy h1{font-size:46px}.hero-image-wrap img{height:390px}.insight-item{padding:27px 21px!important;min-height:315px}.insight-item h3{font-size:20px}.live-product-window iframe{height:620px}}
-@media(max-width:650px){.site-nav{height:68px}.hero{padding:65px 0 80px}.hero-grid{grid-template-columns:1fr;gap:45px}.hero-copy h1{font-size:clamp(47px,11vw,62px)}.hero-image-wrap{transform:none}.hero-image-wrap img{height:365px}.intro-inner{gap:10px 21px}.product-section{padding:75px 0 82px}.section-head h2{font-size:36px}.live-preview-toolbar{flex-direction:column;align-items:flex-start;gap:16px}.preview-tabs{width:100%;justify-content:space-between}.preview-tab{font-size:10px;padding:10px 8px}.live-product-frame{padding:5px}.live-browser-top{padding:0 10px}.live-browser-top span{font-size:7px;letter-spacing:.06em}.live-browser-top a{font-size:9px}.live-product-window iframe{height:605px}.insight-list{gap:13px}.insight-item{min-height:0;padding:27px 22px!important}.insight-item p{min-height:0}.insights-section{padding:74px 0}.people-section{padding:75px 0}.people-photo img{height:360px}.editorial-copy h2{font-size:36px}.end-cta{padding:76px 0}}
-@media(max-width:400px){.hero-copy h1{font-size:44px}.live-browser-top span{display:none}.preview-tab{font-size:9px}.live-product-window iframe{height:630px}}
-
-
-/* Original editorial expression informed by bold, friendly marketplace design. */
-:root{--ink:#12292c;--navy:#132d38;--navy2:#0d2630;--teal:#286e62;--muted:#587173;--cream:#f7faf6;--lime:#dff4a6}
-body{background:#fafcf9;color:var(--ink)}
-.site-header{background:#ffffffed;border-color:#e2e9e4}.site-nav{height:76px}
-.brand-symbol{background:#172f39}.brand-symbol svg{color:var(--lime)}.nav-links a{color:#2c4246}
-.nav-cta,.button-main{background:#102b31;border-radius:7px}
-.hero{padding:95px 0 107px;background:#dff4a6}.hero-grid{grid-template-columns:1.02fr .98fr;gap:60px}
-.hero-copy h1{color:#162d30;font-size:clamp(51px,5.5vw,79px);letter-spacing:-.075em;line-height:1.04;font-weight:800}
-.hero-copy h1 em{color:#286f62}.hero-copy .lead{color:#405d53;font-size:17px;line-height:1.75}
-.pill{color:#2b675a;font-size:11px;font-weight:800}.pill:before{background:#133f39}
-.button-secondary{background:#e9f8c5;border-color:#a2b991;color:#193b34}.button-secondary:hover{background:#f1ffd8}
-.hero-note{color:#527260}
-.hero-image-wrap{transform:rotate(-1.1deg);padding:0;border:9px solid #fff;box-shadow:14px 16px 0 #b5d28d,0 24px 52px #25423125;border-radius:6px}
-.hero-image-wrap::after{display:none}.hero-image-wrap img{height:445px;filter:saturate(.84)}
-.hero-image-wrap figcaption{background:white;padding:13px 12px 5px;color:#3c554d}
-.intro-ribbon{background:#132d38;border:0}.intro-inner{padding:23px 0;justify-content:space-between}
-.intro-inner span{font-size:12px;font-weight:800;color:#edf7ee}
-.quick-paths{padding:31px 0 16px;background:#fff}
-.quick-paths-inner{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.quick-path{position:relative;display:flex;flex-direction:column;gap:12px;background:#eef5ec;border:1px solid #e0e9e2;padding:23px 25px;min-height:149px;border-radius:10px;transition:transform .2s,background .2s}
-.quick-path:nth-child(2){background:#e5f3d1}.quick-path:nth-child(3){background:#ecf1f8}.quick-path:hover{background:#dff4a6;transform:translateY(-3px)}
-.quick-path-num{font:800 10px Manrope,Arial,sans-serif;letter-spacing:.08em;color:#4f7467}
-.quick-path strong{font:800 21px/1.18 Manrope,Arial,sans-serif;letter-spacing:-.055em;max-width:270px}
-.quick-path-arrow{position:absolute;bottom:19px;right:20px;font-size:18px;font-weight:800}
-.product-section{padding-top:94px;background:#fff}.section-head h2{font-weight:800;letter-spacing:-.07em;font-size:clamp(39px,4.1vw,58px)}
-.live-product-frame{padding:8px;border-color:#d3e0d4;box-shadow:0 15px 45px #213e351a}
-.insights-section{background:#f7faf5}.insight-item{box-shadow:none!important}.insight-item:first-child{background:#e4f5ce}.insight-item:nth-child(2){background:#e9f1f2}.insight-item:nth-child(3){background:#f4eee1}.insight-item h3{font-size:24px;font-weight:800}
-.process-section{background:#122e3b}.process-item::before{background:#dff4a6}
-.editorial-copy h2,.end-cta h2{font-weight:800;letter-spacing:-.07em}.end-cta{background:#dff4a6}.site-footer{background:#122e3b}
-@media(max-width:1050px){.hero-grid{gap:35px}.hero-copy h1{font-size:clamp(45px,5.5vw,66px)}.hero-image-wrap img{height:402px}.quick-path strong{font-size:18px}}
-@media(max-width:650px){.hero{padding:65px 0 77px}.hero-grid{grid-template-columns:1fr;gap:38px}.hero-copy h1{font-size:clamp(44px,11vw,62px)}.hero-copy .lead{font-size:15px}.hero-image-wrap{transform:none;box-shadow:8px 10px 0 #b5d28d}.hero-image-wrap img{height:335px}.quick-paths-inner{grid-template-columns:1fr;gap:10px}.quick-path{padding:18px 20px;min-height:94px}.quick-path strong{font-size:20px}.intro-inner span{font-size:10px}.section-head h2{font-size:37px}}
-
-
-/* Focused MVP landing experience: no embedded app or heavyweight iframe */
-.mvp-story{padding:95px 0 110px;background:#fbfdfb}
-.mvp-heading{max-width:860px;margin:0 0 38px}
-.mvp-heading h2{font:800 clamp(37px,4.4vw,62px)/1.11 Manrope,Arial,sans-serif;letter-spacing:-.07em;color:#172f38;margin:15px 0 17px}
-.mvp-heading p{max-width:640px;font-size:15px;color:#5b7374;line-height:1.8}
-.mvp-path{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:38px 0 65px}
-.mvp-path a{min-height:180px;display:flex;flex-direction:column;position:relative;padding:22px 20px;background:#f0f5ec;border:1px solid #e2e9dc;border-radius:10px;transition:transform .18s,background .18s}
-.mvp-path a:nth-child(2){background:#e7f1f0}.mvp-path a:nth-child(3){background:#f4f0e8}.mvp-path a:nth-child(4){background:#dff4a6}
-.mvp-path a:hover{transform:translateY(-3px);background:#e7f7c8}
-.mvp-step{color:#46756e;font:800 9px Manrope,sans-serif;letter-spacing:.1em}
-.mvp-path strong{margin:27px 0 7px;font:800 17px/1.25 Manrope,sans-serif;letter-spacing:-.045em}
-.mvp-path a>span:nth-of-type(2){color:#688281;font-size:11px;line-height:1.65;padding-right:16px}
-.mvp-path b{position:absolute;bottom:20px;right:19px;font-size:19px}
-.mvp-demo-box{display:grid;grid-template-columns:.86fr 1.14fr;gap:38px;align-items:center;background:#132d3b;color:#fff;border-radius:15px;padding:47px 40px 47px 51px;overflow:hidden}
-.mvp-demo-copy .eyebrow{color:#c7eda8}
-.mvp-demo-copy h3{font:800 clamp(30px,3.3vw,46px)/1.12 Manrope,sans-serif;letter-spacing:-.065em;margin:18px 0}
-.mvp-demo-copy p{color:#c0d3d7;font-size:13px;max-width:390px;line-height:1.85;margin-bottom:26px}
-.mvp-demo-copy .button-main{background:#dff4a6;color:#173335}
-.mvp-demo-copy .button-main:hover{background:#f0ffce}
-.mvp-preview{border-radius:10px;background:#f7faf8;color:#183846;box-shadow:0 18px 45px #0418233b;padding:27px 28px;transform:rotate(1deg)}
-.mvp-preview-title{font:800 9px Manrope,sans-serif;letter-spacing:.12em;color:#678486;display:flex;justify-content:space-between;gap:10px}
-.mvp-preview-title span:last-child{color:#288472}
-.mvp-preview-h{font:800 21px Manrope,sans-serif;letter-spacing:-.05em;margin:18px 0}
-.mvp-preview-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
-.mvp-preview-cards div{padding:14px;background:#fff;border:1px solid #e5eeeb;border-radius:7px}
-.mvp-preview-cards small{display:block;font-size:10px;color:#75908e}
-.mvp-preview-cards strong{font:800 25px Manrope,sans-serif;display:block;margin:8px 0}
-.mvp-preview-chart{background:#fff;border:1px solid #e5eeeb;border-radius:7px;margin-top:10px;padding:14px}
-.mvp-preview-chart>span{font-weight:800;font-size:11px}
-.mvp-bars{margin:17px 0 5px;height:85px;display:flex;justify-content:space-around;align-items:end;gap:15px;border-bottom:1px solid #e5eeeb}
-.mvp-bars i{background:#4c9b8b;border-radius:4px 4px 0 0;flex:1}
-.mvp-preview-foot{display:block;margin-top:14px;color:#7c9190;font-size:9px;line-height:1.5}
-@media(max-width:1050px){.mvp-path{grid-template-columns:repeat(2,1fr)}.mvp-demo-box{gap:20px;padding:40px 30px}}
-@media(max-width:650px){.mvp-story{padding:65px 0}.mvp-heading h2{font-size:36px}.mvp-path{grid-template-columns:1fr 1fr;gap:9px}.mvp-path a{padding:16px 12px;min-height:156px}.mvp-path strong{font-size:15px}.mvp-path a>span:nth-of-type(2){font-size:10px}.mvp-demo-box{grid-template-columns:1fr;padding:29px 20px;gap:23px}.mvp-preview{transform:none;padding:17px}.mvp-preview-cards small{font-size:8px}.mvp-preview-cards strong{font-size:20px}}
-@media(max-width:400px){.mvp-path{grid-template-columns:1fr}.mvp-path a{min-height:116px}.mvp-path strong{margin-top:14px}.mvp-preview-title{font-size:7px}.mvp-preview-cards{gap:5px}.mvp-preview-cards div{padding:9px}}
-
-</style>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="theme-color" content="#102732"/>
+<meta name="description" content="More than a headcount. Church Growth Intelligence connects outreach, first visits, follow-ups and observed returns for independent churches. Explore our fictional-data demo."/>
+<title>Church Growth Intelligence — More than a headcount</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="landing-premium.css"/>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
+<a class="skip-link" href="#main">Skip to main content</a>
 <header class="site-header">
-<div class="wrap site-nav">
+<div class="container header-inner">
 <a class="brand" href="#top" aria-label="Church Growth Intelligence home">
-<span class="brand-symbol" aria-hidden="true"><svg width="23" height="23" viewBox="0 0 24 24" fill="none"><path d="M3 7.5 10 15l11-11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 15 10 22l11-11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity=".5"/></svg></span>
-<span class="brand-text"><span class="brand-main">church<i>growth</i></span><span class="brand-sub">INTELLIGENCE</span></span>
+<span class="brand-mark"><svg viewBox="0 0 28 28" fill="none" aria-hidden="true"><path d="M4 18.5 11 12l4.5 4.5L24 7.5" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 24l7-6.5 4.5 4.5L24 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity=".54"/></svg></span>
+<span><span class="brand-name">church<em>growth</em></span><span class="brand-caption">INTELLIGENCE</span></span>
 </a>
-<nav class="nav-links" id="nav-links" aria-label="Main navigation">
-<a href="#platform">Platform</a><a href="#insights">What you can learn</a><a href="#approach">How it works</a><a href="#principles">Our approach</a>
+<nav class="header-nav" aria-label="Main navigation">
+<a href="#platform">The platform</a><a href="#how">How it works</a><a href="#approach">Our approach</a>
 </nav>
-<a class="nav-cta" href="app.html#/overview">Explore the demo <span aria-hidden="true">↗</span></a>
-<button type="button" class="menu-button" id="menu-button" aria-label="Open navigation" aria-controls="nav-links" aria-expanded="false">☰</button>
+<a class="btn btn-dark header-cta" href="app.html#/overview">Explore the demo <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round"/></svg></a>
+<button id="menu-toggle" class="menu-toggle" aria-label="Open navigation" aria-controls="mobile-menu" aria-expanded="false"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
 </div>
+<nav id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation"><a href="#platform">The platform</a><a href="#how">How it works</a><a href="#approach">Our approach</a><a href="app.html#/overview">Explore the demo ↗</a></nav>
 </header>
 <main id="main">
 <section class="hero" id="top">
-<div class="wrap hero-grid">
-<div class="hero-copy reveal">
-<span class="pill">Church intelligence, with personality</span>
-<h1>More than a <em>headcount.</em> More human connection.</h1>
-<p class="lead">See who arrives, who returns and where outreach really connects. One simple home for your church’s attendance, outreach and follow-up insights.</p>
-<div class="hero-actions"><a class="button-main" href="app.html#/overview">See it in action <span aria-hidden="true">↗</span></a><a class="button-secondary" href="#platform">Take a look around <span aria-hidden="true">↓</span></a></div>
-<div class="hero-note">Built for independent churches · Fictional demo data</div>
+<div class="container hero-grid">
+<div class="hero-copy">
+<span class="hero-eyebrow">A clearer picture for independent churches</span>
+<h1>More than a headcount. <span>More human connection.</span></h1>
+<p class="hero-lede">Church growth is about people, not just attendance. See how outreach leads to first visits, how your team follows up, and who finds their way back.</p>
+<div class="hero-buttons"><a href="app.html#/overview" class="btn btn-dark">Explore the interactive demo <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round"/></svg></a><a href="#platform" class="btn btn-outline">See how it works <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 7 5 5 5-5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round"/></svg></a></div>
+<div class="hero-note"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/><path d="m6.4 10 2.4 2.4 5-5.1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Explore freely · No sign-up · Fictional sample data</div>
 </div>
-<figure class="hero-image-wrap reveal">
-<img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1300&q=84" alt="People talking together around a table in a welcoming, informal gathering" width="1300" height="1000" decoding="async" fetchpriority="high">
-<figcaption><span>The best part of church? The people.</span><b>MADE FOR CONNECTION</b></figcaption>
+<figure class="hero-image-block">
+<div class="photo">
+<div class="hero-image-fallback" aria-hidden="true">Every visit starts<br/>with someone.</div>
+<img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1200&q=85" alt="A group of people sharing a welcoming conversation together around a table" width="1200" height="1000" fetchpriority="high" decoding="async"/>
+</div>
+<figcaption><span>Insight designed around people, not numbers alone.</span><b>01 / BELONGING</b></figcaption>
 </figure>
 </div>
 </section>
-<div class="intro-ribbon"><div class="wrap intro-inner"><span>Less spreadsheet archaeology.</span><span>More meaningful follow-up.</span><span>Better-informed outreach.</span></div></div>
-<section class="quick-paths" aria-label="Explore the platform"><div class="wrap quick-paths-inner">
-<a href="app.html#/overview" class="quick-path"><span class="quick-path-num">01 / ATTENDANCE</span><strong>Who came back?</strong><span class="quick-path-arrow" aria-hidden="true">↗</span></a>
-<a href="app.html#/campaigns" class="quick-path"><span class="quick-path-num">02 / OUTREACH</span><strong>What made a connection?</strong><span class="quick-path-arrow" aria-hidden="true">↗</span></a>
-<a href="app.html#/followups" class="quick-path"><span class="quick-path-num">03 / FOLLOW-UP</span><strong>Who could use a hello?</strong><span class="quick-path-arrow" aria-hidden="true">↗</span></a>
-</div></section>
-
-<section class="mvp-story" id="platform" aria-labelledby="mvp-title"><div class="wrap">
-<div class="mvp-heading reveal"><span class="eyebrow">ONE USEFUL EXPERIENCE · OUTREACH INTELLIGENCE</span>
-<h2 id="mvp-title">From the first invitation<br>to a lasting connection.</h2>
-<p>No more separate spreadsheets for every step. Our focused demo connects four simple workflows so church leaders can see what is happening, and what needs attention.</p></div>
-<div class="mvp-path">
-<a href="app.html#/campaigns"><span class="mvp-step">01 / PLAN</span><strong>Record a campaign</strong><span>Community activities and estimated reach</span><b>↗</b></a>
-<a href="app.html#/visitors"><span class="mvp-step">02 / WELCOME</span><strong>Log a first visit</strong><span>One outreach source per visitor</span><b>↗</b></a>
-<a href="app.html#/followups"><span class="mvp-step">03 / CARE</span><strong>Plan a follow-up</strong><span>Tasks, owners and completion</span><b>↗</b></a>
-<a href="app.html#/overview"><span class="mvp-step">04 / LEARN</span><strong>Understand returns</strong><span>Observed engagement, with honest denominators</span><b>↗</b></a>
+<div class="signal-bar"><div class="container signal-inner">
+<span><b>01</b> See where people first connect</span>
+<span><b>02</b> Keep follow-up personal</span>
+<span><b>03</b> Understand who returns</span>
+</div></div>
+<section class="statement" aria-labelledby="statement-title">
+<div class="container statement-inner">
+<div><span class="section-eyebrow">A better question to ask</span><h2 id="statement-title">Not simply “How many came?”<br/><em>What happened next?</em></h2></div>
+<div class="statement-copy">It’s easy to count activity. It’s harder to understand connection. Church Growth Intelligence brings the steps of a visitor’s journey together, so leaders can make thoughtful decisions without losing the human story.<div><a class="link-inline" href="#how">Explore the journey <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></a></div></div>
 </div>
-<div class="mvp-demo-box reveal"><div class="mvp-demo-copy"><span class="eyebrow">THE INTERACTIVE PRODUCT</span><h3>One dashboard.<br>One joined-up story.</h3><p>Open a fictional church workspace, add a campaign, record a visitor, complete a follow-up and watch the metrics change. No signup or real records required.</p><a class="button-main" href="app.html#/overview">Launch outreach demo <span aria-hidden="true">↗</span></a></div>
-<div class="mvp-preview" aria-label="Illustration of the outreach intelligence dashboard, all counts fictional"><div class="mvp-preview-title"><span>RIVERSIDE COMMUNITY CHURCH</span><span>● DEMO</span></div><div class="mvp-preview-h">Outreach overview</div><div class="mvp-preview-cards"><div><small>First visits</small><strong>69</strong></div><div><small>Care tasks</small><strong>11</strong></div><div><small>Campaigns</small><strong>6</strong></div></div><div class="mvp-preview-chart"><span>Outreach journeys</span><div class="mvp-bars"><i style="height:38%"></i><i style="height:62%"></i><i style="height:46%"></i><i style="height:82%"></i><i style="height:70%"></i><i style="height:95%"></i><i style="height:59%"></i><i style="height:87%"></i></div></div><small class="mvp-preview-foot">Illustrative styling and sample counts only. See the interactive demo for calculated figures.</small></div>
+</section>
+<section class="product" id="platform" aria-labelledby="platform-title"><div class="container">
+<div class="product-head"><div><span class="section-eyebrow">Meet the platform / 01</span><h2 class="section-title" id="platform-title">One connected view.<br/>A clearer next step.</h2></div><p class="section-intro">A practical home for outreach campaigns, first visits, follow-ups and recorded returns. Fewer disconnected sheets. More useful context.</p></div>
+<div class="product-frame"><div class="product-window">
+<div class="windowbar"><span class="windowdots" aria-hidden="true"><i></i><i></i><i></i></span><span class="windowbar-label">CHURCH GROWTH INTELLIGENCE / PRODUCT PREVIEW</span><a href="app.html#/overview" class="windowbar-action">OPEN DEMO ↗</a></div>
+<div class="demo-preview">
+<div class="preview-side" aria-hidden="true"><div class="preview-logo">church<span>growth</span></div><span class="preview-nav active"><i></i> Overview</span><span class="preview-nav"><i></i> Campaigns</span><span class="preview-nav"><i></i> Visitors</span><span class="preview-nav"><i></i> Follow-ups</span></div>
+<div class="preview-content">
+<div class="preview-meta"><small>RIVERSIDE COMMUNITY CHURCH / ILLUSTRATIVE</small><em>● FICTIONAL DEMO</em></div>
+<h3>Outreach overview</h3>
+<div class="preview-metrics"><div class="preview-metric"><small>Source-attributed<br/>first visits</small><strong>69</strong><b>Linked to recorded sources</b></div><div class="preview-metric"><small>Outreach<br/>campaigns</small><strong>6</strong><b>Recorded activities</b></div><div class="preview-metric"><small>Follow-up<br/>work items</small><strong>11</strong><b>Demo task records</b></div></div>
+<div class="preview-lower"><div class="preview-chart-card"><div class="preview-panel-head">First visits over time <span>Illustrative trend</span></div>
+<svg class="preview-chart" viewBox="0 0 490 155" role="img" aria-label="Illustrative line chart showing a generally upward trend in first visits">
+<g><path class="grid" d="M10 28H480M10 76H480M10 125H480"/></g>
+<path class="fill" d="M10 120C40 118 72 78 105 93S165 121 190 84S247 60 282 74S335 43 369 48S422 26 480 17V125H10Z"/>
+<path class="line" d="M10 120C40 118 72 78 105 93S165 121 190 84S247 60 282 74S335 43 369 48S422 26 480 17"/>
+</svg></div>
+<div class="preview-tasks"><div class="preview-panel-head">Follow-up priorities <span>Care queue</span></div><ul><li><i></i> Welcome check-in <b>Due</b></li><li><i></i> Outreach follow-up <b>Open</b></li><li><i></i> Return invitation <b>Open</b></li></ul></div></div>
+</div>
+</div></div></div>
+<div class="product-foot"><p>Illustrative interface and example values, not actual church data. The interactive demo recalculates from its own fictional records.</p><a class="link-inline" href="app.html#/overview">Experience the working demo <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></a></div>
+</div></section>
+<section class="workflow" id="how" aria-labelledby="workflow-title"><div class="container">
+<div class="workflow-head"><div><span class="section-eyebrow">A simpler way forward / 02</span><h2 class="section-title" id="workflow-title">From first hello<br/>to feeling at home.</h2></div><p class="section-intro">Four connected steps. Each designed to help the church team see a clearer picture and make the next person-centred decision.</p></div>
+<div class="workflow-steps">
+<a class="workflow-step" href="app.html#/campaigns"><div class="step-top"><span class="step-number">01 / OUTREACH</span><span class="step-arrow">↗</span></div><h3>Make the<br/>invitation.</h3><p>Record a community campaign and its estimated reach.</p><span class="step-link">Explore campaigns →</span></a>
+<a class="workflow-step" href="app.html#/visitors"><div class="step-top"><span class="step-number">02 / FIRST VISIT</span><span class="step-arrow">↗</span></div><h3>Remember<br/>the welcome.</h3><p>Record a first visit with the visitor’s reported outreach source.</p><span class="step-link">Explore visits →</span></a>
+<a class="workflow-step" href="app.html#/followups"><div class="step-top"><span class="step-number">03 / FOLLOW-UP</span><span class="step-arrow">↗</span></div><h3>Make the<br/>next step count.</h3><p>Coordinate thoughtful follow-ups and see what is still outstanding.</p><span class="step-link">Explore follow-ups →</span></a>
+<a class="workflow-step" href="app.html#/overview"><div class="step-top"><span class="step-number">04 / CONNECTION</span><span class="step-arrow">↗</span></div><h3>Understand<br/>who returns.</h3><p>Observe return visits over appropriate windows, without overstating impact.</p><span class="step-link">Explore insights →</span></a>
 </div>
 </div></section>
-<section class="end-cta"><div class="wrap end-cta-inner"><div class="reveal"><span class="eyebrow">A better perspective starts here</span><h2>People matter.<br>So does what you learn.</h2><p>See how thoughtful analytics can bring more clarity to outreach, attendance and the journeys that matter most.</p></div><a class="button-main" href="app.html#/overview">Explore the focused demo <span aria-hidden="true">↗</span></a></div></section>
+<section class="why" id="approach" aria-labelledby="why-title"><div class="container why-grid">
+<div class="why-copy"><span class="section-eyebrow">Our approach / 03</span><h2 class="section-title" id="why-title">Built for better care, not just better charts.</h2><p>Great church leadership is personal. Good information should support that work, never replace the care, relationships and decisions of your team.</p><div class="why-note">Thoughtful measurement. Human judgement. Community impact.</div></div>
+<div class="principles"><div class="principle"><span class="principle-num">01</span><div><h3>Clear about what the numbers mean.</h3><p>Outreach reach, first visits, completed follow-ups and returns are distinct measures. Correlation is not proof of causation.</p></div></div>
+<div class="principle"><span class="principle-num">02</span><div><h3>People’s privacy comes first.</h3><p>Only fictional IDs are used in our current demo. A real release will require informed consent, secure access and carefully controlled handling of sensitive data.</p></div></div>
+<div class="principle"><span class="principle-num">03</span><div><h3>Small, useful steps before complexity.</h3><p>We’re perfecting one connected outreach journey before building out the wider multi-church platform. Production accounts, billing and secure tenancy are not yet available.</p></div></div></div>
+</div></section>
+<section class="final" aria-labelledby="final-title"><div class="container final-inner"><div><span class="section-eyebrow">Go beyond the headcount</span><h2 id="final-title">See the bigger picture.<br/>Stay close to the people.</h2><p>Explore our focused outreach intelligence demo and discover what connected church analytics could look like.</p></div><a class="btn btn-dark" href="app.html#/overview">Explore the demo <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></a></div></section>
 </main>
-<footer class="site-footer"><div class="wrap"><div class="footer-top"><a class="brand" href="#top" aria-label="Return to top"><span class="brand-symbol" aria-hidden="true"><svg width="23" height="23" viewBox="0 0 24 24" fill="none"><path d="M3 7.5 10 15l11-11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 15 10 22l11-11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity=".5"/></svg></span><span class="brand-text"><span class="brand-main">church<i>growth</i></span><span class="brand-sub">INTELLIGENCE</span></span></a><div class="footer-links"><a href="#platform">Platform</a><a href="#insights">Insights</a><a href="#principles">Our approach</a><a href="app.html#/overview">Demo workspace</a></div></div><div class="footer-base"><p>© <span id="year">2026</span> Church Growth Intelligence · Product concept</p><p>All data on this site is fictional. Real tenant security, payments and production data handling are not yet implemented.</p></div></div></footer>
+<footer class="footer"><div class="container"><div class="footer-top"><a class="brand" href="#top" aria-label="Church Growth Intelligence home"><span class="brand-mark"><svg viewBox="0 0 28 28" fill="none" aria-hidden="true"><path d="M4 18.5 11 12l4.5 4.5L24 7.5" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 24l7-6.5 4.5 4.5L24 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity=".54"/></svg></span><span><span class="brand-name">church<em>growth</em></span><span class="brand-caption">INTELLIGENCE</span></span></a><nav class="footer-linkset" aria-label="Footer navigation"><a href="#platform">The platform</a><a href="#how">How it works</a><a href="#approach">Our approach</a><a href="app.html#/overview">Try the demo</a></nav></div><div class="footer-bottom"><p>© <span id="year">2026</span> Church Growth Intelligence. An evolving product concept.</p><p>All names, records and metrics in the demo are fictional. Photography is illustrative.</p></div></div></footer>
 <script>
-document.getElementById('year').textContent=new Date().getFullYear();
-document.querySelectorAll('.preview-tab').forEach(button=>{button.addEventListener('click',()=>{
-const view=button.dataset.view;
-document.querySelectorAll('.preview-tab').forEach(b=>{let active=b===button;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});
-document.querySelector('#product-iframe').src='app.html#/'+view;
-document.querySelector('#open-preview').href='app.html#/'+view;
-});});
-const menu=document.getElementById('menu-button'),links=document.getElementById('nav-links');
-menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close navigation':'Open navigation');menu.textContent=open?'×':'☰';});
-links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open navigation');menu.textContent='☰';}));
-document.addEventListener('keydown',e=>{if(e.key==='Escape'&&links.classList.contains('open')){links.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open navigation');menu.textContent='☰';menu.focus()}});
-if('IntersectionObserver'in window){const o=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');o.unobserve(e.target)}})},{threshold:.06});document.querySelectorAll('.reveal').forEach(n=>o.observe(n));}else document.querySelectorAll('.reveal').forEach(n=>n.classList.add('visible'));
+document.getElementById("year").textContent=new Date().getFullYear();
+const toggle=document.getElementById("menu-toggle"),nav=document.getElementById("mobile-menu");
+function closeMenu(){nav.classList.remove("open");toggle.setAttribute("aria-expanded","false");toggle.setAttribute("aria-label","Open navigation");}
+toggle.addEventListener("click",()=>{const open=nav.classList.toggle("open");toggle.setAttribute("aria-expanded",String(open));toggle.setAttribute("aria-label",open?"Close navigation":"Open navigation");});
+nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",closeMenu));
+document.addEventListener("keydown",event=>{if(event.key==="Escape" && nav.classList.contains("open")){closeMenu();toggle.focus();}});
 </script>
-</body></html>
+</body>
+</html>
