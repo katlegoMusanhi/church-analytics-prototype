@@ -2,6 +2,12 @@
 
 **Status (22 October 2026): STAGING DATABASE INITIALIZED.** Not deployed to production. The public GitHub Pages demo is unchanged and still uses fictional browser-local records.
 
+## Legal operating jurisdiction (decision: Botswana first)
+
+As agreed 22 October 2026, Botswana is the proposed initial operating jurisdiction. This does **not** establish incorporation or statutory compliance. The Botswana Data Protection Act, 2024 (Act 18 of 2024, commenced 14 January 2025) is the primary framework. Religious affiliation may be sensitive personal data, and the existing AWS **us-east-1** hosting choice requires Botswana-to-US transfer review before any real individual records. Do not invite Botswana churches to enter member data until Botswana legal counsel and our compliance checklist approve the pilot.
+
+See `compliance/COMPLIANCE_REGISTER.md` and `compliance/LEGAL_NOTICES_DRAFT.md` for the Botswana-first gates and draft legal notices.
+
 ## Connected staging resource
 
 - Neon project name: Church Growth Intelligence - Staging
