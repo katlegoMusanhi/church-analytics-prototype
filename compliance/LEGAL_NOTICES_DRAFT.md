@@ -4,6 +4,14 @@ Version: 0.1 | 22 October 2026 | Proposed product: Church Growth Intelligence
 
 **Missing details before publication:** Legal operator name, registered address, registration number (if required), privacy contact address, countries served, approved hosting region, actual service providers, and review of visitor/children/sensitive-data handling. Do not use placeholder contact details in a published notice.
 
+## Botswana-first drafting instructions — confirmed 22 October 2026
+
+Church Growth Intelligence will **initially be operated from Botswana**, subject to confirming the actual legal entity, registration status, location and responsible privacy contact. Botswana's Data Protection Act, 2024 (Act 18 of 2024, commenced 14 January 2025) is the primary legal framework for drafting. These drafts are **not publication-ready**: do not falsely claim the entity is registered, that the product is compliant, or that real church data is already handled under an approved lawful basis.
+
+Priority legal review topics: personal data that may reveal religious affiliation; the distinction between non-commercial religious organizations and an independent SaaS processor; notices and any required explicit consent or alternative statutory condition; roles under an appropriate church–platform DPA; Botswana-to-US transfers (Neon staging presently AWS US East); retention and erasure; rights requests; vendor lists; and inventory of cookies, browser local storage, remote fonts and embedded images. Treat Zimbabwe and other countries as future expansion requirements until specifically targeted.
+
+Before publishing, fill in: **[Botswana legal entity name — unknown]**, **[Botswana registration details — unknown]**, **[registered address — unknown]**, **[privacy contact — unknown]**, **[approved cross-border/hosting details — pending]**, **[effective date and approval — pending]**.
+
 ## A. Website privacy notice — draft for fictional prototype
 
 **Who we are.** This website presents a developing church outreach and growth analytics product. The legal entity operating the service and privacy contact will be identified in the approved publication version.
