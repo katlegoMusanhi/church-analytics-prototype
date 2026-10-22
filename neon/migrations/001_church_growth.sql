@@ -34,9 +34,15 @@ create function app_private.can_read(target_church uuid) returns boolean languag
 
 create function app_private.can_write(target_church uuid) returns boolean language sql stable security definer set search_path='' as $$ select (select auth.user_id()) is not null and exists(select 1 from public.church_memberships m where m.church_id=target_church and m.user_id=(select auth.user_id()) and m.role in ('owner','admin','editor')) $$;
 
+create function app_private.is_current_user(member_user_id text) returns boolean language sql stable security definer set search_path='' as $ select (select auth.user_id()) is not null and member_user_id=(select auth.user_id()) $;
+
 revoke all on function app_private.can_read(uuid),app_private.can_write(uuid) from public;
 
+revoke all on function app_private.is_current_user(text) from public;
+
 grant execute on function app_private.can_read(uuid),app_private.can_write(uuid) to authenticated;
+
+grant execute on function app_private.is_current_user(text) to authenticated;
 
 create function app_private.guard_record_identity() returns trigger language plpgsql set search_path='' as $$ begin if new.id is distinct from old.id or new.church_id is distinct from old.church_id then raise exception 'record ID and church are immutable' using errcode='42501'; end if; return new; end $$;
 
@@ -64,7 +70,7 @@ alter table public.follow_up_tasks enable row level security;
 
 create policy churches_select on public.churches for select to authenticated using ((select app_private.can_read(id)));
 
-create policy memberships_self on public.church_memberships for select to authenticated using (user_id=(select auth.user_id()));
+create policy memberships_self on public.church_memberships for select to authenticated using ((select app_private.is_current_user(user_id)));
 
 create policy campaigns_select on public.outreach_campaigns for select to authenticated using ((select app_private.can_read(church_id)));
 
