@@ -4,6 +4,18 @@
 
 **Purpose:** Compliance-by-design for an outreach analytics SaaS serving multiple independent churches. This register is a product-engineering plan, not a legal opinion. A qualified practitioner in every target jurisdiction must approve applicability, lawful bases, contracts, transfers, notices and launch readiness.
 
+## Jurisdiction decision — Botswana first (22 October 2026)
+
+**Confirmed product direction:** Botswana is the initial proposed jurisdiction of operation and the priority country for legal review, product policies, pilot agreements and launch controls. This does **not** assert that the operator is already incorporated, registered or licensed in Botswana; legal entity identity remains outstanding (L01). Zimbabwe, South Africa, EU/UK and other markets are expansion jurisdictions, not part of the initial operating assumption. Applicable foreign law must still be assessed if users, customers, processing or vendors trigger it.
+
+**Primary statute:** Botswana Data Protection Act, 2024 (Act No. 18 of 2024), in force **14 January 2025**. It expressly identifies information revealing religious beliefs as sensitive personal data. Sections 30–31 contain specific rules and conditions for sensitive-data processing, including provisions relevant to non-commercial religious bodies; **do not assume these provisions automatically authorize an independent commercial SaaS provider or transfer to it**. Obtain Botswana counsel review before using identifiable church-visitor records.
+
+**Immediate release blockers:** determine operator legal entity and privacy contact; assess statutory registration and accountability obligations; map controller/processor roles; establish an appropriate basis and condition for each personal/sensitive-data purpose; complete a privacy impact assessment; draft Botswana-focused privacy notices, DPA and terms; audit cookies/browser storage; implement retention and data-subject request processes; test staff authentication and church-isolation RLS; obtain a Botswana-to-US transfer assessment and any required mechanism before using the existing Neon staging database for real data.
+
+**Data-residency decision pending:** Neon staging is in AWS US East. It remains restricted to schema and fictional tests until the cross-border transfer decision is approved. Select an appropriate region and vendors based on legal review, not merely technical convenience.
+
+**Primary reference:** https://botswanalaws.com/consolidated-statutes/principle-legislation/data-protection (includes Act 18 of 2024 and commencement date); commencement SI 4/2025. All actual compliance requirements and exceptions must be confirmed with qualified Botswana legal counsel.
+
 ## 1. Operating model and risk classification
 
 - Proposed default: each church determines the purposes of processing its members'/visitors' information (potential **controller**); Church Growth Intelligence processes data under documented instructions (potential **processor**). Review this per feature; the SaaS operator can be an independent controller for account, billing, security and marketing data.
